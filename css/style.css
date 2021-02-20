@@ -1,3 +1,159 @@
-body {
-  background-color: aqua;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: rgb(249, 168, 66);
+  --link-color: rgba(255, 111, 111);
+  --link-hover-color: rgba(26, 29, 42);
+  --color-4: rgba(255, 235, 209);
+  --color-5: rgba(255, 101, 80, 0.4);
+
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Roboto", sans-serif;
+  --main-text-color: rgba(26, 29, 42);
+  --secondary-text-color: white;
+
+  --white-space: 1rem;
+}
+main {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+h1,
+h2 {
+  font-family: var(--primary-font);
+  color: var(--link-hover-color);
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+button:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+html {
+  font-size: 100%;
+  font-family: var(--primary-font);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+button {
+  padding: 1.5rem;
+
+  text-align: center;
+  text-decoration: none;
+  font: bold 1.25em/1 var(--primary-font);
+  letter-spacing: 1px;
+  color: white;
+  box-shadow: 3px 37px 37px -9px rgba(255, 111, 111, 0.36);
+  border-radius: 49px;
+  border: none;
+  background-color: var(--link-color);
+
+  cursor: pointer;
+  margin: 1rem 2rem 2rem 0;
+  text-transform: uppercase;
+}
+
+.secondary-button {
+  background: var(--link-hover-color);
+  box-shadow: 3px 37px 37px -9px rgba(26, 29, 42, 0.36);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: var(--bg-color);
+  color: var(--main-text-color);
+  font-family: var(--primary-font);
+  margin-bottom: 3rem;
+}
+nav ul {
+  display: flex;
+  padding-left: 1rem;
+}
+nav ul li {
+  text-decoration: none;
+  list-style: none;
+  padding-left: 1rem;
+}
+
+#logo {
+  max-width: 20%;
+}
+#quiz-front {
+  text-align: center;
+}
+footer {
+  background-color: var(--bg-color);
+  color: var(--main-text-color);
+  font-family: var(--secondary-font);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+#allbeers-cta {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+#home-curiosities article {
+  background-color: var(--link-color);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 1rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+}
+#home-curiosities article img {
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+}
+#home-curiosities article p {
+  font-size: 1.2rem;
+}
+#home-curiosities {
+  margin-bottom: 3rem;
+  display: grid;
+}
+#quiz-front {
+  padding: 2rem;
+}
+#intro p {
+  font-size: 1.2rem;
+}
+#intro {
+  margin-bottom: 5rem;
+}
+
+@media only screen and (min-width: 600px) {
+  main {
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
+  #logo {
+    max-width: 10%;
+  }
+
+  nav ul li {
+    align-self: center;
+    padding-left: 3rem;
+  }
+  #home-curiosities {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 3rem;
+  }
+  #home-curiosities h2 {
+    grid-column: 1 / -1;
+  }
 }
