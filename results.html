@@ -1,44 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Skal project quiz</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-        <div id=logo><img src="img/logo1.svg" alt=logo-home></div>
+      <nav>
+        <div id="logo"><img src="img/logo1.svg" alt="logo-home" /></div>
         <ul>
-        <li>All types of beers</li>
-        <li>Take the quiz!</li>
+          <li>All types of beers</li>
+          <li>Take the quiz!</li>
         </ul>
-        </nav>
-        </header>
-        
-        <main>
-            <article class=result>
-                <section id=youare>
-                <h2>Your're the<br>ALEbi<br>of this crime!</h2>
-                <img src="img/cream-ale.svg">
-                <p>Yes, you read it right. You're like a chamelion, you can have a sort of 101 different colours and flavours, as an ALE BEER.</p>
-<p>There are many strains of ale yeast that add all sorts of flavours, from fruity to earthy, so there’s a huge variety of options to explore from.</p>
-<a href="product.html"><button>Tell me more!</button></a>
-</section>
-            <section id=nah>
-                <p>Nah... It doesn't sound like me.<p>
-                <a href="quiz.html"><button>Take another try</button></a>
+      </nav>
+    </header>
 
-                </section>
+    <main>
+      <article class="result">
+        <div class="showresult">
+          <img class="arrow" src="img/left-arrow.svg" alt="arrow" />
+          <p>Result</p>
+        </div>
+        <section id="youare">
+          <h2>Your're the<br /><span>ALE</span>bi<br />of this crime!</h2>
+        </section>
+        <div class="result-wrapper">
+          <p>
+            Yes, you read it right. You're like a chamelion, you can have a sort
+            of 101 different colours and flavours, as an
+            <strong>ALE BEER</strong>.
+          </p>
+          <p>
+            There are many strains of ale yeast that add all sorts of flavours,
+            from fruity to earthy, so there’s a huge variety of options to
+            explore from.
+          </p>
+          <a href="product.html"
+            ><button class="button-white">Tell me more!</button></a
+          >
 
-                </article>
-        </main>
-        <footer>
-            <p>This site is part of a project for Kea, Copenhagen School of Design and Technology.</p>
-            <p>The data refering beer classification and characteristics has been extracted from the 2015 Beer Style Guidelines of the BJCP.  </p></footer>
+          <p>Nah... It doesn't sound like me.</p>
+          <p>
+            <a href="quiz.html"
+              ><button class="secondary-button">Take another try</button></a
+            >
+          </p>
+        </div>
+      </article>
+    </main>
+    <footer>
+      <p>
+        This site is part of a project for Kea, Copenhagen School of Design and
+        Technology.
+      </p>
+      <p>
+        The data refering beer classification and characteristics has been
+        extracted from the 2015 Beer Style Guidelines of the BJCP.
+      </p>
+    </footer>
 
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>
