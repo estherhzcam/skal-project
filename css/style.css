@@ -94,6 +94,90 @@ nav ul li {
 #logo {
   max-width: 20%;
 }
+
+#quiz {
+  text-align: center;
+}
+
+#quiz h2{
+  color: white; 
+  width: 80%;
+  margin: auto;
+  font-size: 1.5rem;
+  padding: 1%;
+  display: inline-block;
+  width: 85%;
+}
+
+.question img{
+  width: 50%; 
+  border-radius: 25px;
+}
+
+.question{ 
+  font-size: 2rem;
+  color: black; 
+  box-sizing: border-box;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
+  background-color: var(--link-color); 
+  border-radius: 30px;
+  height: 90vh;
+  margin: 5%;
+  display: inline-block;
+  width: 85%;
+}
+
+#switch p{
+  color: white; 
+  font-size: 1rem;
+}
+
+#switch #arrow {
+  color: white; 
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.question ul li{
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 30px;
+padding: 10px;
+list-style: none;
+cursor: pointer;
+box-shadow: 2px 2px 2px white;
+  margin: 5px;
+  display: inline-block;
+  width: 80%;
+  font-size: 1rem;
+}
+
+.question ul li:hover{
+  background-color: var(--color-4); 
+  transform: translateY(-5px);
+  transition: all ease 0.4s;
+}
+
+.question a:link{
+text-decoration: none;
+color: black;
+}
+
+.question a:visited{
+  text-decoration: none;
+  color: black;
+  }
+
+  .question a:hover{
+    text-decoration: none;
+    color: black;
+    }
+
+    .question a:active{
+      text-decoration: none;
+      color: black;
+      }
+
 #quiz-front {
   background-image: url(../img/bg.jpg);
   background-position: center;
