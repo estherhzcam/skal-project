@@ -130,7 +130,7 @@ nav ul li {
 
 #logo {
 max-width: 20%;
-  position:fixed;
+  position:absolute;
 left:0;
 top:0;
 }
