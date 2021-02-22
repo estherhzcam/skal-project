@@ -98,25 +98,18 @@ nav ul li {
   text-align: center;
 }
 
-#arrow{
-  font-size: 5vh;
-  display: inline-block;
-  margin-left: -60%;
-  padding-top: 10px;
-}
-
 #quiz h2{
   color: white; 
   width: 80%;
   margin: auto;
-  font-size: 3.5rem;
+  font-size: 1.5rem;
   padding: 1%;
   display: inline-block;
-  width: 70%;
+  width: 85%;
 }
 
 .question img{
-  width: 45%; 
+  width: 50%; 
   border-radius: 25px;
 }
 
@@ -127,23 +120,35 @@ nav ul li {
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
   background-color: var(--link-color); 
   border-radius: 30px;
-  height: 80vh;
+  height: 90vh;
   margin: 5%;
   display: inline-block;
-  width: 80%;
+  width: 85%;
+}
+
+#switch p{
+  color: white; 
+  font-size: 1rem;
+}
+
+#switch #arrow {
+  color: white; 
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 .question ul li{
   box-sizing: border-box;
   background-color: white;
   border-radius: 30px;
-padding: 20px;
+padding: 10px;
 list-style: none;
 cursor: pointer;
 box-shadow: 2px 2px 2px white;
-  margin: 20px;
+  margin: 5px;
   display: inline-block;
-  width: 70%;
+  width: 80%;
+  font-size: 1rem;
 }
 
 .question ul li:hover{
