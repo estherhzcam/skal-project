@@ -72,6 +72,8 @@ button {
   font-size: 1.8rem;
 }
 
+/* *** previous navigation ***  */
+/* 
 nav {
   display: flex;
   flex-direction: row;
@@ -89,10 +91,48 @@ nav ul li {
   list-style: none;
   padding-left: 1rem;
   font-size: 2rem;
+} */
+
+/* *** responsive navigation ***  */
+.topnav {
+  overflow: hidden;
+  background-color: var(--bg-color);
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: var(--main-text-color);
+  font-family: var(--primary-font);
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.active {
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.topnav .icon:hover{
+  color: white;
+}
+
+.topnav a:hover {
+  color: white;
 }
 
 #logo {
-  max-width: 20%;
+max-width: 20%;
+  position:fixed;
+left:0;
+top:0;
 }
 
 #quiz {
@@ -296,6 +336,39 @@ span {
 #youare p {
   font-size: 1.4rem;
 }
+
+/* ***start-nav*** */
+@media screen and (max-width: 800px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  .topnav.responsive {float: none;}
+  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}
+/* ***end-nav*** */
 
 @media only screen and (min-width: 600px) {
   .home-main {
