@@ -504,3 +504,10 @@ span {
     top: 0; */
 
 /* opacity: 0.8; */
+
+.type-beer h3 {
+  text-transform: lowercase;
+}
+.type-beer h3::first-letter {
+  text-transform: uppercase;
+}
