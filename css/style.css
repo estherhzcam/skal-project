@@ -99,8 +99,8 @@ nav ul li {
   text-align: center;
 }
 
-#quiz h2{
-  color: white; 
+#quiz h2 {
+  color: white;
   width: 80%;
   margin: auto;
   font-size: 1.5rem;
@@ -109,17 +109,17 @@ nav ul li {
   width: 85%;
 }
 
-.question img{
-  width: 50%; 
+.question img {
+  width: 50%;
   border-radius: 25px;
 }
 
-.question{ 
+.question {
   font-size: 2rem;
-  color: black; 
+  color: black;
   box-sizing: border-box;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
-  background-color: var(--link-color); 
+  background-color: var(--link-color);
   border-radius: 30px;
   height: 90vh;
   margin: 5%;
@@ -127,56 +127,56 @@ nav ul li {
   width: 85%;
 }
 
-#switch p{
-  color: white; 
+#switch p {
+  color: white;
   font-size: 1rem;
 }
 
 #switch #arrow {
-  color: white; 
+  color: white;
   font-size: 2rem;
   cursor: pointer;
 }
 
-.question ul li{
+.question ul li {
   box-sizing: border-box;
   background-color: white;
   border-radius: 30px;
-padding: 10px;
-list-style: none;
-cursor: pointer;
-box-shadow: 2px 2px 2px white;
+  padding: 10px;
+  list-style: none;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px white;
   margin: 5px;
   display: inline-block;
   width: 80%;
   font-size: 1rem;
 }
 
-.question ul li:hover{
-  background-color: var(--color-4); 
+.question ul li:hover {
+  background-color: var(--color-4);
   transform: translateY(-5px);
   transition: all ease 0.4s;
 }
 
-.question a:link{
-text-decoration: none;
-color: black;
-}
-
-.question a:visited{
+.question a:link {
   text-decoration: none;
   color: black;
-  }
+}
 
-  .question a:hover{
-    text-decoration: none;
-    color: black;
-    }
+.question a:visited {
+  text-decoration: none;
+  color: black;
+}
 
-    .question a:active{
-      text-decoration: none;
-      color: black;
-      }
+.question a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.question a:active {
+  text-decoration: none;
+  color: black;
+}
 
 #quiz-front {
   background-image: url(../img/bg.jpg);
@@ -269,6 +269,9 @@ article.result {
 
   width: 100%;
   margin-top: 3rem;
+}
+.showresult p {
+  font-size: 2rem;
 }
 .arrow {
   max-width: 10%;
@@ -435,10 +438,8 @@ span {
 
 /* Here goes the css for the beer-types.html page */
 
-
-
 #beer-types-page #beers-grid {
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 2rem;
   margin-bottom: 5rem;
@@ -463,11 +464,11 @@ span {
   max-height: 15rem;
 }
 
-#beer-types-page article a:link{
+#beer-types-page article a:link {
   text-decoration: none;
   color: black;
 }
-#beer-types-page article a:visited{
+#beer-types-page article a:visited {
   text-decoration: none;
   color: black;
 }
@@ -476,26 +477,24 @@ span {
   transform: scale(1.1);
   transition: transform 0.2s;
   box-shadow: 3px 37px 37px -9px rgba(26, 29, 42, 0.36);
-  cursor:pointer;
+  cursor: pointer;
 }
 
 #beer-types-page #button-category {
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
 }
 #beer-types-page #button-category h3 {
-text-align: center;
+  text-align: center;
 }
 #beer-types-page #button-category button {
   background-color: black;
   box-shadow: 3px 37px 37px -9px rgba(26, 29, 42, 0.36);
-  }
+}
 
-  #beer-types-page #button-category a {
+#beer-types-page #button-category a {
   align-self: center;
-    }
-
-
+}
 
 /* #quiz-front img {
     position: absolute;
