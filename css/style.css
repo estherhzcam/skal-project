@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -99,8 +98,8 @@ nav ul li {
   text-align: center;
 }
 
-#quiz h2{
-  color: white; 
+#quiz h2 {
+  color: white;
   width: 80%;
   margin: auto;
   font-size: 1.5rem;
@@ -109,17 +108,17 @@ nav ul li {
   width: 85%;
 }
 
-.question img{
-  width: 50%; 
+.question img {
+  width: 50%;
   border-radius: 25px;
 }
 
-.question{ 
+.question {
   font-size: 2rem;
-  color: black; 
+  color: black;
   box-sizing: border-box;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
-  background-color: var(--link-color); 
+  background-color: var(--link-color);
   border-radius: 30px;
   height: 90vh;
   margin: 5%;
@@ -127,56 +126,56 @@ nav ul li {
   width: 85%;
 }
 
-#switch p{
-  color: white; 
+#switch p {
+  color: white;
   font-size: 1rem;
 }
 
 #switch #arrow {
-  color: white; 
+  color: white;
   font-size: 2rem;
   cursor: pointer;
 }
 
-.question ul li{
+.question ul li {
   box-sizing: border-box;
   background-color: white;
   border-radius: 30px;
-padding: 10px;
-list-style: none;
-cursor: pointer;
-box-shadow: 2px 2px 2px white;
+  padding: 10px;
+  list-style: none;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px white;
   margin: 5px;
   display: inline-block;
   width: 80%;
   font-size: 1rem;
 }
 
-.question ul li:hover{
-  background-color: var(--color-4); 
+.question ul li:hover {
+  background-color: var(--color-4);
   transform: translateY(-5px);
   transition: all ease 0.4s;
 }
 
-.question a:link{
-text-decoration: none;
-color: black;
-}
-
-.question a:visited{
+.question a:link {
   text-decoration: none;
   color: black;
-  }
+}
 
-  .question a:hover{
-    text-decoration: none;
-    color: black;
-    }
+.question a:visited {
+  text-decoration: none;
+  color: black;
+}
 
-    .question a:active{
-      text-decoration: none;
-      color: black;
-      }
+.question a:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.question a:active {
+  text-decoration: none;
+  color: black;
+}
 
 #quiz-front {
   background-image: url(../img/bg.jpg);
@@ -435,10 +434,8 @@ span {
 
 /* Here goes the css for the beer-types.html page */
 
-
-
 #beer-types-page #beers-grid {
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 2rem;
   margin-bottom: 5rem;
@@ -463,11 +460,11 @@ span {
   max-height: 15rem;
 }
 
-#beer-types-page article a:link{
+#beer-types-page article a:link {
   text-decoration: none;
   color: black;
 }
-#beer-types-page article a:visited{
+#beer-types-page article a:visited {
   text-decoration: none;
   color: black;
 }
@@ -476,26 +473,24 @@ span {
   transform: scale(1.1);
   transition: transform 0.2s;
   box-shadow: 3px 37px 37px -9px rgba(26, 29, 42, 0.36);
-  cursor:pointer;
+  cursor: pointer;
 }
 
 #beer-types-page #button-category {
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
 }
 #beer-types-page #button-category h3 {
-text-align: center;
+  text-align: center;
 }
 #beer-types-page #button-category button {
   background-color: black;
   box-shadow: 3px 37px 37px -9px rgba(26, 29, 42, 0.36);
-  }
+}
 
-  #beer-types-page #button-category a {
+#beer-types-page #button-category a {
   align-self: center;
-    }
-
-
+}
 
 /* #quiz-front img {
     position: absolute;
@@ -505,3 +500,106 @@ text-align: center;
     top: 0; */
 
 /* opacity: 0.8; */
+
+/* ----------------------- beer.html page -------------------------- */
+
+main.product-page {
+  margin-left: 12rem;
+  margin-right: 12rem;
+  margin-top: 3rem;
+}
+article.beer-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 3rem;
+  margin: 0 auto;
+  padding-top: 0rem;
+  padding-bottom: 2rem;
+}
+
+section.product-image {
+  padding-top: 1rem;
+}
+
+section.product-image img {
+  border-style: solid;
+  border-color: var(--color-5);
+  border-width: medium;
+  padding: 1rem 5rem;
+  border-radius: 40px;
+  margin: 0 auto;
+}
+
+section.product-description h1 {
+  font-size: 3.3rem;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 600;
+  line-height: 3rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+p.category-text {
+  margin-top: 0;
+  margin-bottom: 1.3rem;
+  padding-left: 0.4rem;
+  font-family: var(--secondary-font);
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+}
+
+p.category-title {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+  padding-left: 0.4rem;
+  font-family: var(--secondary-font);
+  font-size: 0.9rem;
+  line-height: 1rem;
+}
+.product-table {
+  width: 5%;
+  vertical-align: top;
+}
+.small-column {
+  width: 5%;
+  vertical-align: top;
+}
+.large-column {
+  padding-right: 1.9rem;
+}
+
+.breadcrumbs a {
+  font-family: var(--secondary-font);
+  text-decoration: none;
+  color: black;
+}
+
+.other-beers h2 {
+  color: black;
+  font-size: 2.5rem;
+  line-height: 2.7rem;
+  font-weight: 600;
+  margin-bottom: 1.3rem;
+}
+
+.other-beers ul li {
+  box-sizing: border-box;
+  padding: 1rem 1.2rem;
+  list-style: none;
+  display: inline-block;
+  font-size: 1rem;
+  border-style: solid;
+  border-color: var(--color-5);
+  border-width: medium;
+  border-radius: 50px;
+  margin: 0.2rem;
+}
+
+#allbeers-cta {
+  font-size: 1.5rem;
+  font-weight: normal;
+  padding: 1.5rem 3.2rem;
+  margin-top: 3rem;
+}

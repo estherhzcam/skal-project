@@ -18,82 +18,155 @@
       </nav>
     </header>
 
-    <main>
-      <article id="beer-card">
-        <div class="breadcrumbs"><p>Beer type / Ale / Beer name</p></div>
-        <img src="img/belgian-dubbel.svg" alt="Ale" />
-        <h1>Type of beer</h1>
-        <ul>
-          <li id="aroma">
-            <img src="img/aroma.svg" alt="Icon aroma" />
-            <p>
-              Low to no malt aroma, although it can be perceived as grainy,
-              sweet, or corn-like if present. Hop aroma is light to none, with a
-              spicy or floral hop character if present. While a clean
-              fermentation character is desirable, a light amount of yeast
-              character (particularly a light apple fruitiness) is not a fault.
-              Light DMS is not a fault.
-            </p>
-          </li>
-          <li id="appearance">
-            <img src="img/appearence.svg" alt="Icon appearance" />
-            <p>
-              Very pale straw to pale yellow color. White, frothy head seldom
-              persists. Very clear.
-            </p>
-          </li>
-          <li id="flavor">
-            <img src="img/flavour.svg" alt="Icon flavour" />
-            <p>
-              Relatively neutral palate with a crisp and dry finish and a low to
-              very low grainy or corn-like flavor that might be perceived as
-              sweetness due to the low bitterness. Hop flavor ranges from none
-              to low levels, and can have a floral, spicy, or herbal quality
-              (although rarely strong enough to detect). Low to very low hop
-              bitterness. Balance may vary from slightly malty to slightly
-              bitter, but is relatively close to even. High levels of
-              carbonation may accentuate the crispness of the dry finish. Clean
-              lager fermentation character.
-            </p>
-          </li>
-          <li id="mouthfeel">
-            <img src="img/mouthfeel.svg" alt="Icon mouthfeel" />
-            <p>
-              Very light (sometimes watery) body. Very highly carbonated with
-              slight carbonic bite on the tongue.
-            </p>
-          </li>
-          <li id="comparison">
-            <img src="img/comparison.svg" alt="Icon comparison" />
-            <p>
-              A lighter-bodied, lower-alcohol, lower calorie version of an
-              American Lager. Less hop character and bitterness than a
-              Leichtbier.
-            </p>
-          </li>
-          <li id="region">
-            <img src="img/region.svg" alt="Icon region" />
-            <p>North-America</p>
-          </li>
-          <li id="family">
-            <img src="img/family.svg" alt="Icon family" />
-            <p>Pale-Lager</p>
-          </li>
-          <li id="ibus">
-            <img src="img/ibus.svg" alt="Icon ibus" />
-            <p>8 – 12</p>
-          </li>
-          <li id="srm">
-            <img src="img/srm.svg" alt="Icon srm" />
-            <p>2 – 3</p>
-          </li>
-          <li id="abv">
-            <img src="img/abv.svg" alt="Icon abv" />
-            <p>2.8 – 4.2%</p>
-          </li>
-        </ul>
+    <main class="product-page">
+      <div class="breadcrumbs">
+        <p>
+          <a href="beer-types.html">Beer types</a> / <a href="">Pale-Lager</a> /
+          <a href="">Belgian Dubbel</a>
+        </p>
+      </div>
+
+      <article class="beer-card">
+        <section class="product-image">
+          <img src="img/belgian-dubbel.svg" alt="Ale" />
+        </section>
+        <section class="product-description">
+          <h1>Belgian Dubbel</h1>
+
+          <table>
+            <tr>
+              <td class="product-table">
+                <img class="icons" src="img/aroma.svg" alt="Icon aroma" />
+              </td>
+              <td>
+                <p class="category-title">AROMA</p>
+                <p class="category-text" id="aroma">
+                  Low to no malt aroma, although it can be perceived as grainy,
+                  sweet, or corn-like if present. Hop aroma is light to none,
+                  with a spicy or floral hop character if present. While a clean
+                  fermentation character is desirable, a light amount of yeast
+                  character (particularly a light apple fruitiness) is not a
+                  fault. Light DMS is not a fault.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="product-table">
+                <img
+                  class="icons"
+                  src="img/appearence.svg"
+                  alt="Icon appearance"
+                />
+              </td>
+              <td>
+                <p class="category-title">APPEARANCE</p>
+                <p class="category-text" id="appearance">
+                  Very pale straw to pale yellow color. White, frothy head
+                  seldom persists. Very clear.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="product-table">
+                <img class="icons" src="img/flavour.svg" alt="Icon flavour" />
+              </td>
+              <td>
+                <p class="category-title">FLAVOUR</p>
+                <p class="category-text" id="flavor">
+                  Relatively neutral palate with a crisp and dry finish and a
+                  low to very low grainy or corn-like flavor that might be
+                  perceived as sweetness due to the low bitterness. Hop flavor
+                  ranges from none to low levels, and can have a floral, spicy,
+                  or herbal quality (although rarely strong enough to detect).
+                  Low to very low hop bitterness. Balance may vary from slightly
+                  malty to slightly bitter, but is relatively close to even.
+                  High levels of carbonation may accentuate the crispness of the
+                  dry finish. Clean lager fermentation character.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="product-table">
+                <img
+                  class="icons"
+                  src="img/mouthfeel.svg"
+                  alt="Icon mouthfeel"
+                />
+              </td>
+              <td>
+                <p class="category-title">MOUTHFEEL</p>
+                <p class="category-text" id="mouthfeel">
+                  Very light (sometimes watery) body. Very highly carbonated
+                  with slight carbonic bite on the tongue.
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="product-table">
+                <img
+                  class="icons"
+                  src="img/comparison.svg"
+                  alt="Icon comparison"
+                />
+              </td>
+              <td>
+                <p class="category-title">COMPARISON</p>
+                <p class="category-text" id="comparison">
+                  A lighter-bodied, lower-alcohol, lower calorie version of an
+                  American Lager. Less hop character and bitterness than a
+                  Leichtbier.
+                </p>
+              </td>
+            </tr>
+          </table>
+
+          <table>
+            <tr>
+              <td class="small-column">
+                <img class="icons" src="img/region.svg" alt="Icon region" />
+              </td>
+              <td class="large-column">
+                <p class="category-title">REGION</p>
+                <p class="category-text" id="region">North-America</p>
+              </td>
+              <td class="small-column">
+                <img class="icons" src="img/family.svg" alt="Icon family" />
+              </td>
+              <td class="large-column">
+                <p class="category-title">FAMILY</p>
+                <p class="category-text" id="family">Pale-Lager</p>
+              </td>
+              <td class="small-column">
+                <img class="icons" src="img/ibus.svg" alt="Icon ibus" />
+              </td>
+              <td class="large-column">
+                <p class="category-title">IBUS</p>
+                <p class="category-text" id="ibus">8 – 12</p>
+              </td>
+              <td class="small-column">
+                <img class="icons" src="img/srm.svg" alt="Icon srm" />
+              </td>
+              <td class="large-column">
+                <p class="category-title">SRM</p>
+                <p class="category-text" id="srm">2 – 3</p>
+              </td>
+              <td class="small-column">
+                <img class="icons" src="img/abv.svg" alt="Icon abv" />
+              </td>
+              <td class="large-column">
+                <p class="category-title">ABV</p>
+                <p class="category-text" id="abv">2.8 – 4.2%</p>
+              </td>
+            </tr>
+          </table>
+        </section>
       </article>
-      <article>
+
+      <article class="other-beers">
         <h2>These belong to this family</h2>
         <ul>
           <li>Bud Light</li>
