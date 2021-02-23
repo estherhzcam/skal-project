@@ -95,12 +95,74 @@ nav ul li {
   max-width: 20%;
 }
 
+/* Here starts the css for the quiz */
+
 #quiz {
+  position:relative;
   text-align: center;
+  height: 50rem;
+  margin-bottom: 10vh;;
+  /*overflow: hidden;*/
 }
 
-#quiz h2 {
-  color: white;
+
+      #question1 {
+        z-index: 5;
+        position:absolute;
+        top:0;
+        left: 3vw;
+    
+      }
+
+      #question2 {
+        z-index: 0;
+        position:absolute;
+        top: 0;
+        left: -100vw;
+        
+      }
+
+      #question3 {
+        z-index: 1;
+        position:absolute;
+        top: 0;
+        left: -100vw;
+      }
+
+      #question4 {
+        z-index: 2;
+        position:absolute;
+        top: 0;
+        left: -100vw;
+      }
+
+      #question5 {
+        z-index: 3;
+        position:absolute;
+        top: 0;
+        left: -100vw;
+      }
+
+      .transparent {
+        pointer-events: none;
+      }
+
+      .moveright {
+        transform: translateX(103vw);
+        transition-duration: 1s;
+        
+      }
+
+      @media only screen and (min-width: 1500px) {
+        #quiz {
+          height: 57rem;
+        }
+
+      }
+
+
+#quiz h2{
+  color: white; 
   width: 80%;
   margin: auto;
   font-size: 1.5rem;
@@ -121,7 +183,7 @@ nav ul li {
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
   background-color: var(--link-color);
   border-radius: 30px;
-  height: 90vh;
+  height: 90%;
   margin: 5%;
   display: inline-block;
   width: 85%;
@@ -142,11 +204,12 @@ nav ul li {
   box-sizing: border-box;
   background-color: white;
   border-radius: 30px;
-  padding: 10px;
   list-style: none;
   cursor: pointer;
   box-shadow: 2px 2px 2px white;
-  margin: 5px;
+padding: 10px;
+list-style: none;
+  margin: 5px 0 5px 0px;
   display: inline-block;
   width: 80%;
   font-size: 1rem;
@@ -177,6 +240,8 @@ nav ul li {
   text-decoration: none;
   color: black;
 }
+
+ 
 
 #quiz-front {
   background-image: url(../img/bg.jpg);
