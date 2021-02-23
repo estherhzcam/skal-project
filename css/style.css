@@ -187,7 +187,9 @@ nav ul li {
   transform: translateX(103vw);
   transition-duration: 1s;
 }
-
+.question ul {
+  padding-left: 0;
+}
 @media only screen and (min-width: 1500px) {
   #quiz {
     height: 57rem;
@@ -215,7 +217,7 @@ nav ul li {
   box-sizing: border-box;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
   background-color: var(--link-color);
-  border-radius: 30px;
+  border-radius: 80px;
   height: 90%;
   margin: 5%;
   display: inline-block;
@@ -227,7 +229,7 @@ nav ul li {
   font-size: 1rem;
 }
 
-.question ul li{
+.question ul li {
   box-sizing: border-box;
   background-color: white;
   border-radius: 30px;
@@ -428,50 +430,48 @@ span {
   }
 }
 /* ***end-nav*** */
-/* // ~~~~~~~~~ quiz page // ~~~~~~~~~ */ 
+/* // ~~~~~~~~~ quiz page // ~~~~~~~~~ */
 @media only screen and (max-width: 1200px) {
-  .question{
+  .question {
     height: 90vh;
   }
 
-  .question img{
-    width: 50%; 
+  .question img {
+    width: 50%;
     border-radius: 25px;
   }
 
   .question ul li {
-    width: 90%; 
+    width: 90%;
   }
 }
 
 @media only screen and (max-width: 950px) {
-
-  .question{
+  .question {
     font-size: 1rem;
     height: 78vh;
   }
 
-  .question img{
-    width: 40%; 
+  .question img {
+    width: 40%;
   }
-
 }
 
 @media only screen and (max-width: 713px) {
-  .question{
+  .question {
     height: 65vh;
     width: 90%;
   }
 
-  .question img{
-    width: 45%; 
+  .question img {
+    width: 45%;
   }
 
-  .question ul li { 
-    width: 95%; 
+  .question ul li {
+    width: 95%;
     font-size: 0.9rem;
   }
-  #quiz h2{
+  #quiz h2 {
     width: 60%;
     margin: auto;
     font-size: 1.2rem;
@@ -481,21 +481,20 @@ span {
   }
 }
 @media only screen and (max-width: 485px) {
-  .question{
+  .question {
     height: 60vh;
   }
-  .question ul li { 
-    width: 95%; 
+  .question ul li {
+    width: 95%;
     font-size: 0.8rem;
   }
-
 }
 
 @media only screen and (max-width: 400px) {
-  .question{
+  .question {
     height: 55vh;
   }
-  #quiz h2{
+  #quiz h2 {
     width: 60%;
     margin: auto;
     font-size: 0.9rem;
@@ -503,8 +502,8 @@ span {
     display: inline-block;
     width: 85%;
   }
-  .question ul li { 
-    width: 95%; 
+  .question ul li {
+    width: 95%;
     font-size: 0.7rem;
   }
 }
@@ -715,12 +714,21 @@ span {
 
 /* opacity: 0.8; */
 
-.type-beer h3 {
+.type-beer h3,
+.breadtype {
   text-transform: lowercase;
 }
 .type-beer h3::first-letter {
   text-transform: uppercase;
 }
+/* .breadtype {
+  display: inline-block;
+  width: max-content;
+  text-align: center;
+}
+.breadtype::first-letter {
+  text-transform: uppercase;
+} */
 /* ----------------------- beer.html page -------------------------- */
 
 main.product-page {
@@ -822,4 +830,7 @@ p.category-title {
   font-weight: normal;
   padding: 1.5rem 3.2rem;
   margin-top: 3rem;
+}
+.other-beers {
+  grid-column: 1 / -1;
 }
