@@ -112,65 +112,66 @@ function results() {
     console.log("results-time you have " + points + "points")
     if(points <5) {
         console.log("less than 5");
-        document.querySelector("#answer5-1").href = "https://elpais.com/"
-        document.querySelector("#answer5-2").href = "https://elpais.com/"
-        document.querySelector("#answer5-3").href = "https://elpais.com/"
+        document.querySelector("#answer5-1").href = "results.html?typebeer=INTERNATIONAL LAGER"
+        document.querySelector("#answer5-2").href = "results.html?typebeer=INTERNATIONAL LAGER"
+        document.querySelector("#answer5-3").href = "results.html?typebeer=INTERNATIONAL LAGER"
     }
 
     if(points == 5) {
         console.log("5")
-        document.querySelector("#answer5-1").href = "results.html"
-        document.querySelector("#answer5-2").href = "results.html"
-        document.querySelector("#answer5-3").href = "results.html"
+        document.querySelector("#answer5-1").href = "results.html?typebeer=Irish Stout"
+        document.querySelector("#answer5-2").href = "results.html?typebeer=Irish Stout"
+        document.querySelector("#answer5-3").href = "results.html?typebeer=Irish Stout"
     }
          
     if(points == 6) {
         console.log("6")
-        document.querySelector("#answer5-1").href = "https://mit.kea.dk/nyheder/kea-flytter-til-nyt-fronter"
-        document.querySelector("#answer5-2").href = "https://mit.kea.dk/nyheder/kea-flytter-til-nyt-fronter"
-        document.querySelector("#answer5-3").href = "https://mit.kea.dk/nyheder/kea-flytter-til-nyt-fronter"
+        document.querySelector("#answer5-1").href = "results.html?typebeer=Dark Mild"
+        document.querySelector("#answer5-2").href = "results.html?typebeer=Dark Mild"
+        document.querySelector("#answer5-3").href = "results.html?typebeer=Dark Mild"
         }
 
     if(points == 7) {
-        document.querySelector("#answer5-1").href = "https://www.skyscanner.dk"
-        document.querySelector("#answer5-2").href = "https://www.skyscanner.dk"
-        document.querySelector("#answer5-3").href = "https://www.skyscanner.dk"}
+        document.querySelector("#answer5-1").href = "results.html?typebeer=IPA"
+        document.querySelector("#answer5-2").href = "results.html?typebeer=IPA"
+        document.querySelector("#answer5-3").href = "results.html?typebeer=IPA"
+    }
         
          
 
     if(points == 8) {
-        document.querySelector("#answer5-1").href = "https://www.youtube.com/"
-        document.querySelector("#answer5-2").href = "https://www.youtube.com/"
-        document.querySelector("#answer5-3").href = "https://www.youtube.com/"
+        document.querySelector("#answer5-1").href = "results.html?typebeer=German Pils"
+        document.querySelector("#answer5-2").href = "results.html?typebeer=German Pils"
+        document.querySelector("#answer5-3").href = "results.html?typebeer=German Pils"
     }
 
 
              
     if(points == 9) {
-        document.querySelector("#answer5-1").href = "https://www.ekohunters.com/"
-        document.querySelector("#answer5-2").href = "https://www.ekohunters.com/"
-        document.querySelector("#answer5-3").href = "https://www.ekohunters.com/"
+        document.querySelector("#answer5-1").href = "results.html?typebeer=British Strong Ale"
+        document.querySelector("#answer5-2").href = "results.html?typebeer=British Strong Ale"
+        document.querySelector("#answer5-3").href = "results.html?typebeer=British Strong Ale"
 
         }
 
     if(points == 10) {
-        document.querySelector("#answer5-1").href = "https://www.zalando.es"
-        document.querySelector("#answer5-2").href = "https://www.zalando.es"
-        document.querySelector("#answer5-3").href = "https://www.zalando.es"
+        document.querySelector("#answer5-1").href = "results.html?typebeer=Belgian Pale Ale"
+        document.querySelector("#answer5-2").href = "results.html?typebeer=Belgian Pale Ale"
+        document.querySelector("#answer5-3").href = "results.html?typebeer=Belgian Pale Ale"
 
         }
                  
     if(points == 11) {
-        document.querySelector("#answer5-1").href = "https://www.w3schools.com/html/default.asp"
-        document.querySelector("#answer5-2").href = "https://www.w3schools.com/html/default.asp"
-        document.querySelector("#answer5-3").href = "https://www.w3schools.com/html/default.asp"
+        document.querySelector("#answer5-1").href = "results.html?typebeer=SPECIALTY-TYPE BEER"
+        document.querySelector("#answer5-2").href = "results.html?typebeer=SPECIALTY-TYPE BEER"
+        document.querySelector("#answer5-3").href = "results.html?typebeer=SPECIALTY-TYPE BEER"
 
         }
 
         if(points == 12) {
-            document.querySelector("#answer5-1").href = "index.html"
-            document.querySelector("#answer5-2").href = "index.html"
-            document.querySelector("#answer5-3").href = "index.html"
+            document.querySelector("#answer5-1").href = "results.html?typebeer=American Porter"
+            document.querySelector("#answer5-2").href = "results.html?typebeer=American Porter"
+            document.querySelector("#answer5-3").href = "results.html?typebeer=American Porter"
     
             }
                 
