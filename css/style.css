@@ -227,7 +227,7 @@ nav ul li {
   font-size: 1rem;
 }
 
-.question ul li{
+.question ul li {
   box-sizing: border-box;
   background-color: white;
   border-radius: 30px;
@@ -428,50 +428,48 @@ span {
   }
 }
 /* ***end-nav*** */
-/* // ~~~~~~~~~ quiz page // ~~~~~~~~~ */ 
+/* // ~~~~~~~~~ quiz page // ~~~~~~~~~ */
 @media only screen and (max-width: 1200px) {
-  .question{
+  .question {
     height: 90vh;
   }
 
-  .question img{
-    width: 50%; 
+  .question img {
+    width: 50%;
     border-radius: 25px;
   }
 
   .question ul li {
-    width: 90%; 
+    width: 90%;
   }
 }
 
 @media only screen and (max-width: 950px) {
-
-  .question{
+  .question {
     font-size: 1rem;
     height: 78vh;
   }
 
-  .question img{
-    width: 40%; 
+  .question img {
+    width: 40%;
   }
-
 }
 
 @media only screen and (max-width: 713px) {
-  .question{
+  .question {
     height: 65vh;
     width: 90%;
   }
 
-  .question img{
-    width: 45%; 
+  .question img {
+    width: 45%;
   }
 
-  .question ul li { 
-    width: 95%; 
+  .question ul li {
+    width: 95%;
     font-size: 0.9rem;
   }
-  #quiz h2{
+  #quiz h2 {
     width: 60%;
     margin: auto;
     font-size: 1.2rem;
@@ -481,21 +479,20 @@ span {
   }
 }
 @media only screen and (max-width: 485px) {
-  .question{
+  .question {
     height: 60vh;
   }
-  .question ul li { 
-    width: 95%; 
+  .question ul li {
+    width: 95%;
     font-size: 0.8rem;
   }
-
 }
 
 @media only screen and (max-width: 400px) {
-  .question{
+  .question {
     height: 55vh;
   }
-  #quiz h2{
+  #quiz h2 {
     width: 60%;
     margin: auto;
     font-size: 0.9rem;
@@ -503,8 +500,8 @@ span {
     display: inline-block;
     width: 85%;
   }
-  .question ul li { 
-    width: 95%; 
+  .question ul li {
+    width: 95%;
     font-size: 0.7rem;
   }
 }
@@ -756,7 +753,7 @@ section.product-description h1 {
   color: black;
   font-weight: 600;
   line-height: 3rem;
-  margin-top: 0;
+  margin-top: 0.8rem;
   margin-bottom: 1rem;
 }
 
