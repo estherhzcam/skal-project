@@ -119,7 +119,7 @@ nav ul li {
   display: none;
 }
 
-.topnav .icon:hover{
+.topnav .icon:hover {
   color: white;
 }
 
@@ -128,76 +128,71 @@ nav ul li {
 }
 
 #logo {
-max-width: 20%;
-  position:absolute;
-left:0;
-top:0;
+  max-width: 20%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 /* Here starts the css for the quiz */
 
 #quiz {
-  position:relative;
+  position: relative;
   text-align: center;
   height: 50rem;
-  margin-bottom: 10vh;;
+  margin-bottom: 10vh;
   /*overflow: hidden;*/
 }
 
+#question1 {
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 3vw;
+}
 
-      #question1 {
-        z-index: 5;
-        position:absolute;
-        top:0;
-        left: 3vw;
-    
-      }
+#question2 {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: -100vw;
+}
 
-      #question2 {
-        z-index: 0;
-        position:absolute;
-        top: 0;
-        left: -100vw;
-        
-      }
+#question3 {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: -100vw;
+}
 
-      #question3 {
-        z-index: 1;
-        position:absolute;
-        top: 0;
-        left: -100vw;
-      }
+#question4 {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: -100vw;
+}
 
-      #question4 {
-        z-index: 2;
-        position:absolute;
-        top: 0;
-        left: -100vw;
-      }
+#question5 {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: -100vw;
+}
 
-      #question5 {
-        z-index: 3;
-        position:absolute;
-        top: 0;
-        left: -100vw;
-      }
+.transparent {
+  pointer-events: none;
+}
 
-      .transparent {
-        pointer-events: none;
-      }
+.moveright {
+  transform: translateX(103vw);
+  transition-duration: 1s;
+}
 
-      .moveright {
-        transform: translateX(103vw);
-        transition-duration: 1s;
-        
-      }
-
-      @media only screen and (min-width: 1500px) {
-        #quiz {
-          height: 57rem;
-        }
-
-      }
+@media only screen and (min-width: 1500px) {
+  #quiz {
+    height: 57rem;
+  }
+}
 
 #quiz h2 {
   color: white;
@@ -239,8 +234,8 @@ top:0;
   list-style: none;
   cursor: pointer;
   box-shadow: 2px 2px 2px white;
-padding: 10px;
-list-style: none;
+  padding: 10px;
+  list-style: none;
   margin: 5px 0 5px 0px;
   display: inline-block;
   width: 70%;
@@ -407,7 +402,9 @@ span {
 }
 
 @media screen and (max-width: 800px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -418,8 +415,12 @@ span {
     display: block;
     text-align: center;
   }
-  .topnav.responsive {float: none;}
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    float: none;
+  }
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive {
     display: block;
     width: 100%;
