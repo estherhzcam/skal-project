@@ -184,9 +184,17 @@ nav ul li {
 }
 
 .moveright {
-  transform: translateX(103vw);
-  transition-duration: 1s;
+  animation: slidein 1s ease-out forwards;
 }
+@keyframes slidein {
+  from {
+    transform: translateX(5000px);
+  }
+  to {
+    transform: translateX(103vw);
+  }
+}
+
 .question ul {
   padding-left: 0;
 }
@@ -719,6 +727,9 @@ span {
   text-transform: lowercase;
 }
 .type-beer h3::first-letter {
+  text-transform: uppercase;
+}
+.breadtype {
   text-transform: uppercase;
 }
 /* .breadtype {

@@ -47,7 +47,21 @@ function showBeers(beer) {
   clone.querySelector("#ibus").textContent = beer.ibus;
   clone.querySelector("#srm").textContent = beer.srm;
   clone.querySelector("#abv").textContent = beer.abv;
-  // clone.querySelector("li").textContent = beer.Examples[0];
+  if (beer.Examples.length > 0) {
+    var all_examples = beer.Examples.split(", ");
+    console.log(all_examples);
+    var other_beers = clone.querySelector(".other-beers");
+    var ul = document.createElement("ul");
+    all_examples.forEach(function (example) {
+      var li = document.createElement("li");
+      li.textContent = example;
+      ul.appendChild(li);
+      console.log(example);
+    });
+    other_beers.appendChild(ul);
+  } else {
+    clone.querySelector(".other-beers h2").remove();
+  }
   // clone.querySelector("li:nth-child(2)").textContent = beer.Examples[1];
   // clone.querySelector("li:nth-child(3)").textContent = beer.Examples[2];
   // clone.querySelector("li:nth-child(4)").textContent = beer.Examples[3];
@@ -60,7 +74,7 @@ function showBeers(beer) {
 
   // var str2 = beer.Examples;
   // var res2 = str2.slice(13, 30);
-  clone.querySelector("li").textContent = beer.Example;
+
   // clone.querySelector("li:nth-child(2)").textContent = res2;
   //   clone.querySelector("img:nth-child(3)").alt = hero.alias;
 
