@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 :root {
@@ -99,6 +100,7 @@ nav ul li {
   background-color: var(--bg-color);
   display: flex;
   flex-direction: row-reverse;
+  padding-top: 5%;
 }
 
 .topnav a {
@@ -109,7 +111,7 @@ nav ul li {
   text-align: right;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .active {
@@ -129,10 +131,10 @@ nav ul li {
 }
 
 #logo {
-max-width: 20%;
-  position:absolute;
-left:0;
-top:0;
+width: 12.5%;
+position:absolute;
+left:0%; 
+top: 0;
 }
 
 #quiz {
@@ -346,6 +348,9 @@ span {
     float: right;
     display: block;
   }
+  .topnav{
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -377,9 +382,6 @@ span {
   }
   main {
     margin: 0;
-  }
-  #logo {
-    max-width: 10%;
   }
   nav {
     margin-bottom: 0;
@@ -568,6 +570,89 @@ text-align: center;
   align-self: center;
     }
 
+
+    /* **** logo adjustments ****  */
+@media screen and (max-width: 1338px) {
+  #logo{
+    width: 13%;
+  }
+}
+@media screen and (max-width: 1202px) {
+  #logo{
+    width: 14%;
+  }
+}
+@media screen and (max-width: 1064px) {
+  #logo{
+    width: 14.5%;
+  }
+}
+@media screen and (max-width: 958px) {
+  #logo{
+    width: 15.5%;
+  }
+}
+@media screen and (max-width: 850px) {
+  #logo{
+    width: 17%;
+  }
+}
+@media screen and (max-width: 800px) {
+  #logo{
+    width: 20%;
+  }
+} 
+@media screen and (max-width: 770px) {
+  #logo{
+    width: 21%;
+  }
+} 
+@media screen and (max-width: 680px) {
+  #logo{
+    width: 22.5%;
+  }
+} 
+@media screen and (max-width: 645px) {
+  #logo{
+    width: 23%;
+  }
+} 
+@media screen and (max-width: 610px) {
+  #logo{
+    width: 24%;
+  }
+} 
+@media screen and (max-width: 570px) {
+  #logo{
+    width: 25%;
+  }
+} 
+@media screen and (max-width: 540px) {
+  #logo{
+    width: 27%;
+  }
+} 
+@media screen and (max-width: 500px) {
+  #logo{
+    width: 28%;
+  }
+} 
+@media screen and (max-width: 470px) {
+  #logo{
+    width: 29%;
+  }
+} 
+@media screen and (max-width: 420px) {
+  #logo{
+    width: 31.5%;
+  }
+} 
+@media screen and (max-width: 390px) {
+  #logo{
+    width: 33%;
+  }
+} 
+/* **** logo adjustments ****  */
 
 
 /* #quiz-front img {
