@@ -62,23 +62,11 @@ function showBeers(beer) {
   } else {
     clone.querySelector(".other-beers h2").remove();
   }
-  // clone.querySelector("li:nth-child(2)").textContent = beer.Examples[1];
-  // clone.querySelector("li:nth-child(3)").textContent = beer.Examples[2];
-  // clone.querySelector("li:nth-child(4)").textContent = beer.Examples[3];
-  // clone.querySelector("li:nth-child(5)").textContent = beer.Examples[4];
-  // clone.querySelector("li:nth-child(6)").textContent = beer.Examples[5];
 
   const imgurl = mediaurl + beer.Image[0];
 
   clone.querySelector("img").src = imgurl;
 
-  // var str2 = beer.Examples;
-  // var res2 = str2.slice(13, 30);
-
-  // clone.querySelector("li:nth-child(2)").textContent = res2;
-  //   clone.querySelector("img:nth-child(3)").alt = hero.alias;
-
-  // clone.querySelector("a").href = `subcategory.html?&category=${beer.Category}`;
   document.querySelector(".breadtype").textContent = beer.Category;
   document.querySelector(
     ".breadtype"
