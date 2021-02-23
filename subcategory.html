@@ -10,11 +10,15 @@
   <body>
     <header>
       <nav>
-        <div id="logo"><img src="img/logo1.svg" alt="logo-home" /></div>
-        <ul>
-          <li>All types of beers</li>
-          <li>Take the quiz!</li>
-        </ul>
+        <div class="topnav" id="myTopnav">
+          <div id="logo"><a href="index.html"><img src="img/logo1.svg" alt="logo-home"></a></div>
+          <a href="#" class="active"></a>
+          <a href="beer-types.html">All types of beers
+        </a>
+          <a href="quiz.html">Take the quiz!
+        </a>
+          <a href="javascript:void(0);" style="font-size:30px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
       </nav>
     </header>
     <template>
@@ -98,5 +102,6 @@
     </footer>
 
     <script src="js/subcategory.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
