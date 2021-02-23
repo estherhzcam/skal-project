@@ -569,34 +569,64 @@ span {
   }
 
   /* result page  */
+
+  .hide {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .loader {
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color: var(--color-4);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+  }
+  #beery {
+    max-width: 50px;
+    position:relative;
+  }
+
+  .animated {
+    animation-name:jumpybeer;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes jumpybeer {
+    0% {
+      transform: translateY(20px); }
+      100%{
+        transform:translateY(-20px)
+      }
+    }
+  }
+
   article.result {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 2rem;
     background-color: var(--link-color);
-    padding-left: 8rem;
-    padding-right: 8rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
     border-radius: 80px;
-
     width: 80%;
     margin: 0 auto;
     margin-top: 4rem;
     margin-bottom: 4rem;
-    /* margin-left: 10rem;
-    margin-right: 10rem; */
   }
   .showresult {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
     width: 100%;
     margin-top: 3rem;
     grid-column: 1 / -1;
-  }
-  .arrow {
-    max-width: 5%;
   }
   .showresult p {
     margin: 0 auto;
@@ -621,27 +651,42 @@ span {
   }
   .result-wrapper {
     padding: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: var(--secondary-text-color);
   }
   #youare p {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
   .button-white {
     background-color: white;
     color: var(--link-color);
+    margin-bottom: 0;
   }
   .result-wrapper button {
     display: block;
-    margin: 0 auto;
-    margin-bottom: 3rem;
+    margin: 0;
     width: 70%;
     font-size: 1.4rem;
   }
   a {
     text-decoration: none;
   }
-}
+  .result-wrapper a {
+    justify-self:center;
+  }
+
+
+  @media only screen and (max-width: 1600px) {
+    #father {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+
+
+
+  }
+
 
 /* Here goes the css for the beer-types.html page */
 
