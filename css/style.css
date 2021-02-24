@@ -758,7 +758,7 @@ section.product-description h1 {
   font-weight: 600;
   line-height: 3rem;
   margin-top: 0.8rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.6rem;
 }
 
 p.category-text {
@@ -795,6 +795,7 @@ p.category-title {
   font-family: var(--secondary-font);
   text-decoration: none;
   color: black;
+  text-transform: uppercase;
 }
 
 .other-beers h2 {
