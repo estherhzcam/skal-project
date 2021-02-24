@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 :root {
@@ -67,8 +68,11 @@ button {
 }
 
 .secondary-button {
-  background: var(--link-hover-color);
-  font-size: 1.8rem;
+  color:rgba(255, 111, 111);
+  background: white; 
+  border-color: pink;
+  border-style:double;
+  font-size: 1rem;
 }
 
 /* *** previous navigation ***  */
@@ -98,6 +102,7 @@ nav ul li {
   background-color: var(--bg-color);
   display: flex;
   flex-direction: row-reverse;
+  padding-top: 5%;
 }
 
 .topnav a {
@@ -108,7 +113,7 @@ nav ul li {
   text-align: right;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .active {
@@ -128,10 +133,10 @@ nav ul li {
 }
 
 #logo {
-  max-width: 20%;
-  position: absolute;
-  left: 0;
-  top: 0;
+width: 12.5%;
+position:absolute;
+left:0%; 
+top: 0;
 }
 
 /* Here starts the css for the quiz */
@@ -409,6 +414,9 @@ span {
     float: right;
     display: block;
   }
+  .topnav{
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -518,15 +526,13 @@ span {
 /* ~~~~~~~~~ end quiz page ~~~~~~~~~  */
 
 @media only screen and (min-width: 600px) {
+
   .home-main {
     margin-left: 10rem;
     margin-right: 10rem;
   }
   main {
     margin: 0;
-  }
-  #logo {
-    max-width: 10%;
   }
   nav {
     margin-bottom: 0;
@@ -756,7 +762,97 @@ span {
 
 #beer-types-page #button-category a {
   align-self: center;
+    }
+
+    .button-white {
+      background-color: rgba(26, 29, 42);
+      color: white; 
+    }
+
+
+    /* **** logo adjustments ****  */
+@media screen and (max-width: 1338px) {
+  #logo{
+    width: 13%;
+  }
 }
+@media screen and (max-width: 1202px) {
+  #logo{
+    width: 14%;
+  }
+}
+@media screen and (max-width: 1064px) {
+  #logo{
+    width: 14.5%;
+  }
+}
+@media screen and (max-width: 958px) {
+  #logo{
+    width: 15.5%;
+  }
+}
+@media screen and (max-width: 850px) {
+  #logo{
+    width: 17%;
+  }
+}
+@media screen and (max-width: 800px) {
+  #logo{
+    width: 20%;
+  }
+} 
+@media screen and (max-width: 770px) {
+  #logo{
+    width: 21%;
+  }
+} 
+@media screen and (max-width: 680px) {
+  #logo{
+    width: 22.5%;
+  }
+} 
+@media screen and (max-width: 645px) {
+  #logo{
+    width: 23%;
+  }
+} 
+@media screen and (max-width: 610px) {
+  #logo{
+    width: 24%;
+  }
+} 
+@media screen and (max-width: 570px) {
+  #logo{
+    width: 25%;
+  }
+} 
+@media screen and (max-width: 540px) {
+  #logo{
+    width: 27%;
+  }
+} 
+@media screen and (max-width: 500px) {
+  #logo{
+    width: 28%;
+  }
+} 
+@media screen and (max-width: 470px) {
+  #logo{
+    width: 29%;
+  }
+} 
+@media screen and (max-width: 420px) {
+  #logo{
+    width: 31.5%;
+  }
+} 
+@media screen and (max-width: 390px) {
+  #logo{
+    width: 33%;
+  }
+} 
+/* **** logo adjustments ****  */
+
 
 /* #quiz-front img {
     position: absolute;
@@ -767,126 +863,82 @@ span {
 
 /* opacity: 0.8; */
 
-.type-beer h3,
-.breadtype {
-  text-transform: lowercase;
-}
-.type-beer h3::first-letter {
-  text-transform: uppercase;
-}
-.breadtype {
-  text-transform: uppercase;
-}
-/* .breadtype {
-  display: inline-block;
-  width: max-content;
-  text-align: center;
-}
-.breadtype::first-letter {
-  text-transform: uppercase;
-} */
-/* ----------------------- beer.html page -------------------------- */
 
-main.product-page {
-  margin-left: 12rem;
-  margin-right: 12rem;
-  margin-top: 3rem;
-}
-article.beer-card {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-column-gap: 3rem;
-  margin: 0 auto;
-  padding-top: 0rem;
-  padding-bottom: 2rem;
+/* ***** animations&transitions Tal***** */
+
+/* **index** */
+.home-main {
+  animation: transitionIn 4s;
 }
 
-section.product-image {
-  padding-top: 1rem;
+@keyframes transitionIn {
+  from {
+opacity: 0;
+transform: rotateX(-10deg);
+  }
+  to {
+      opacity: 1;
+      transform: rotateX(0);
+  }
 }
 
-section.product-image img {
-  border-style: solid;
-  border-color: var(--color-5);
-  border-width: medium;
-  padding: 1rem 5rem;
-  border-radius: 40px;
-  margin: 0 auto;
+main h1{
+  animation: transitionIn 0.8s;
 }
 
-section.product-description h1 {
-  font-size: 3.3rem;
-  text-transform: uppercase;
-  color: black;
-  font-weight: 600;
-  line-height: 3rem;
-  margin-top: 0.8rem;
-  margin-bottom: 1rem;
+@keyframes transitionIn {
+  from {
+opacity: 0;
+transform: rotateX(-10deg);
+  }
+  to {
+      opacity: 1;
+      transform: rotateX(0);
+  }
 }
 
-p.category-text {
-  margin-top: 0;
-  margin-bottom: 1.3rem;
-  padding-left: 0.4rem;
-  font-family: var(--secondary-font);
-  font-size: 0.85rem;
-  line-height: 1.5rem;
+main p{
+  animation: transitionIn 1.5s;
 }
 
-p.category-title {
-  font-weight: bold;
-  margin-top: 0;
-  margin-bottom: 0.6rem;
-  padding-left: 0.4rem;
-  font-family: var(--secondary-font);
-  font-size: 0.9rem;
-  line-height: 1rem;
-}
-.product-table {
-  width: 5%;
-  vertical-align: top;
-}
-.small-column {
-  width: 5%;
-  vertical-align: top;
-}
-.large-column {
-  padding-right: 1.9rem;
+@keyframes transitionIn {
+  from {
+opacity: 0;
+transform: rotateX(-10deg);
+  }
+  to {
+      opacity: 1;
+      transform: rotateX(0);
+  }
 }
 
-.breadcrumbs a {
-  font-family: var(--secondary-font);
-  text-decoration: none;
-  color: black;
+#quiz-front #cta{
+  animation: transitionIn 2.5s;
 }
 
-.other-beers h2 {
-  color: black;
-  font-size: 2.5rem;
-  line-height: 2.7rem;
-  font-weight: 600;
-  margin-bottom: 1.3rem;
+@keyframes transitionIn {
+  from {
+opacity: 0;
+transform: rotateX(-10deg);
+  }
+  to {
+      opacity: 1;
+      transform: rotateX(0);
+  }
 }
 
-.other-beers ul li {
-  box-sizing: border-box;
-  padding: 1rem 1.2rem;
-  list-style: none;
-  display: inline-block;
-  font-size: 1rem;
-  border-style: solid;
-  border-color: var(--color-5);
-  border-width: medium;
-  border-radius: 50px;
-  margin: 0.2rem;
+/* *** quiz ***  */
+main {
+  animation: transitionIn 0.75s;
 }
 
-#allbeers-cta {
-  font-size: 1.5rem;
-  font-weight: normal;
-  padding: 1.5rem 3.2rem;
-  margin-top: 3rem;
-}
-.other-beers {
-  grid-column: 1 / -1;
+@keyframes transitionIn {
+  from {
+opacity: 0;
+transform: rotateX(-10deg);
+  }
+  to {
+      opacity: 1;
+      transform: rotateX(0);
+  }
 }
