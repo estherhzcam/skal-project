@@ -69,8 +69,11 @@ button {
 }
 
 .secondary-button {
-  background: var(--link-hover-color);
-  font-size: 1.8rem;
+  color:rgba(255, 111, 111);
+  background: white; 
+  border-color: pink;
+  border-style:double;
+  font-size: 1rem;
 }
 
 /* *** previous navigation ***  */
@@ -376,6 +379,7 @@ span {
 /* ***end-nav*** */
 
 @media only screen and (min-width: 600px) {
+
   .home-main {
     margin-left: 10rem;
     margin-right: 10rem;
@@ -492,10 +496,6 @@ span {
   #youare p {
     font-size: 1.4rem;
   }
-  .button-white {
-    background-color: white;
-    color: var(--link-color);
-  }
   .result-wrapper button {
     display: block;
     margin: 0 auto;
@@ -568,6 +568,11 @@ text-align: center;
 
   #beer-types-page #button-category a {
   align-self: center;
+    }
+
+    .button-white {
+      background-color: rgba(26, 29, 42);
+      color: white; 
     }
 
 
@@ -663,3 +668,83 @@ text-align: center;
     top: 0; */
 
 /* opacity: 0.8; */
+
+
+/* ***** animations&transitions Tal***** */
+
+/* **index** */
+.home-main {
+  animation: transitionIn 4s;
+}
+
+@keyframes transitionIn {
+  from {
+opacity: 0;
+transform: rotateX(-10deg);
+  }
+  to {
+      opacity: 1;
+      transform: rotateX(0);
+  }
+}
+
+main h1{
+  animation: transitionIn 0.8s;
+}
+
+@keyframes transitionIn {
+  from {
+opacity: 0;
+transform: rotateX(-10deg);
+  }
+  to {
+      opacity: 1;
+      transform: rotateX(0);
+  }
+}
+
+main p{
+  animation: transitionIn 1.5s;
+}
+
+@keyframes transitionIn {
+  from {
+opacity: 0;
+transform: rotateX(-10deg);
+  }
+  to {
+      opacity: 1;
+      transform: rotateX(0);
+  }
+}
+
+#quiz-front #cta{
+  animation: transitionIn 2.5s;
+}
+
+@keyframes transitionIn {
+  from {
+opacity: 0;
+transform: rotateX(-10deg);
+  }
+  to {
+      opacity: 1;
+      transform: rotateX(0);
+  }
+}
+
+/* *** quiz ***  */
+main {
+  animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn {
+  from {
+opacity: 0;
+transform: rotateX(-10deg);
+  }
+  to {
+      opacity: 1;
+      transform: rotateX(0);
+  }
+}
