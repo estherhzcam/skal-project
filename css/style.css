@@ -184,10 +184,20 @@ nav ul li {
 }
 
 .moveright {
-  transform: translateX(103vw);
-  transition-duration: 1s;
+  animation: slidein 1s ease-out forwards;
+}
+@keyframes slidein {
+  from {
+    transform: translateX(5000px);
+  }
+  to {
+    transform: translateX(103vw);
+  }
 }
 
+.question ul {
+  padding-left: 0;
+}
 @media only screen and (min-width: 1500px) {
   #quiz {
     height: 57rem;
@@ -215,7 +225,7 @@ nav ul li {
   box-sizing: border-box;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
   background-color: var(--link-color);
-  border-radius: 30px;
+  border-radius: 80px;
   height: 90%;
   margin: 5%;
   display: inline-block;
@@ -757,12 +767,24 @@ span {
 
 /* opacity: 0.8; */
 
-.type-beer h3 {
+.type-beer h3,
+.breadtype {
   text-transform: lowercase;
 }
 .type-beer h3::first-letter {
   text-transform: uppercase;
 }
+.breadtype {
+  text-transform: uppercase;
+}
+/* .breadtype {
+  display: inline-block;
+  width: max-content;
+  text-align: center;
+}
+.breadtype::first-letter {
+  text-transform: uppercase;
+} */
 /* ----------------------- beer.html page -------------------------- */
 
 main.product-page {
@@ -864,4 +886,7 @@ p.category-title {
   font-weight: normal;
   padding: 1.5rem 3.2rem;
   margin-top: 3rem;
+}
+.other-beers {
+  grid-column: 1 / -1;
 }

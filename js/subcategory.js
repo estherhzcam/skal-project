@@ -34,7 +34,6 @@ fetch(url, options)
 
 function handleData(beers) {
   beers.forEach(showBeers);
-  console.log("dupa");
 }
 function showBeers(beer) {
   console.log(beer);
@@ -48,7 +47,7 @@ function showBeers(beer) {
   clone.querySelector("img").src = imgurl;
   //   clone.querySelector("img:nth-child(3)").alt = hero.alias;
 
-  clone.querySelector("a").href = `beer.html?beer=${beer.Subcategory}`;
+  clone.querySelector("a").href = `beer.html?id=${beer._id}`;
 
   const mainEl = document.querySelector("#beers-grid");
   mainEl.appendChild(clone);

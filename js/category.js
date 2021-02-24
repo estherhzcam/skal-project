@@ -3,7 +3,6 @@
 
 const url = "https://keaprojects21-50cf.restdb.io/rest/beer-data-base";
 
-const suburl = "https://keaprojects21-50cf.restdb.io/rest/beer-data-base?";
 const mediaurl = "https://keaprojects21-50cf.restdb.io/media/";
 
 const options = {
@@ -37,7 +36,6 @@ function handleData(beers) {
   });
 
   console.log(seenbefore);
-  console.log("dupa");
 }
 function showBeers(beer) {
   console.log(beer);
