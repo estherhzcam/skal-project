@@ -17,10 +17,6 @@
 
   --white-space: 1rem;
 }
-.home-main {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
 h1,
 h2 {
   font-family: var(--primary-font);
@@ -28,14 +24,6 @@ h2 {
   font-weight: bold;
   font-size: 3rem;
   font-weight: bold;
-}
-
-#quiz-front p {
-  font-size: 1.2rem;
-}
-button:hover {
-  transform: scale(1.1);
-  transition: transform 0.5s;
 }
 
 html {
@@ -69,6 +57,98 @@ button {
 .secondary-button {
   background: var(--link-hover-color);
   font-size: 1.8rem;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+/* CSS FOR HOMEPAGE */
+
+.home-main {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+#quiz-front p {
+  font-size: 1.2rem;
+}
+
+#quiz-front {
+  background-image: url(../img/bg.jpg);
+  background-position: center;
+  margin-left: 0;
+  margin-right: 0;
+  /* position: relative;
+  overflow: hidden; */
+  margin-bottom: 3rem;
+}
+#quiz-front h1,
+#quiz-front p,
+#cta {
+  /* position: relative;
+  z-index: 2; */
+  color: var(--secondary-text-color);
+}
+#cta {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+/* #quiz-front img {
+  position: absolute;
+  width: 100%;
+  height: 700px;
+  left: 0;
+  top: 0;
+ */
+
+/* opacity: 0.8; */
+footer {
+  background-color: var(--bg-color);
+  color: var(--main-text-color);
+  font-family: var(--secondary-font);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+#allbeers-cta {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+#home-curiosities article {
+  background-color: var(--link-color);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 0rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+}
+#home-curiosities article img {
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+}
+#home-curiosities article p {
+  font-size: 1.6rem;
+}
+#home-curiosities {
+  margin-bottom: 3rem;
+  display: grid;
+}
+#quiz-front {
+  padding: 2rem;
+}
+#intro p {
+  font-size: 1.2rem;
+}
+#intro {
+  margin-bottom: 3rem;
 }
 
 /* *** previous navigation ***  */
@@ -268,83 +348,6 @@ nav ul li {
   color: black;
 }
 
-#quiz-front {
-  background-image: url(../img/bg.jpg);
-  background-position: center;
-  margin-left: 0;
-  margin-right: 0;
-  /* position: relative;
-  overflow: hidden; */
-  margin-bottom: 3rem;
-}
-#quiz-front h1,
-#quiz-front p,
-#cta {
-  /* position: relative;
-  z-index: 2; */
-  color: var(--secondary-text-color);
-}
-#cta {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 4rem;
-  margin-top: 4rem;
-}
-/* #quiz-front img {
-  position: absolute;
-  width: 100%;
-  height: 700px;
-  left: 0;
-  top: 0;
- */
-
-/* opacity: 0.8; */
-
-footer {
-  background-color: var(--bg-color);
-  color: var(--main-text-color);
-  font-family: var(--secondary-font);
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.8rem;
-}
-#allbeers-cta {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 5rem;
-}
-#home-curiosities article {
-  background-color: var(--link-color);
-  border-radius: 40px;
-  display: flex;
-  flex-direction: column;
-  color: white;
-  margin: 0rem;
-  margin-bottom: 3rem;
-  padding: 2rem;
-}
-#home-curiosities article img {
-  width: 40%;
-  display: block;
-  margin: 0 auto;
-}
-#home-curiosities article p {
-  font-size: 1.6rem;
-}
-#home-curiosities {
-  margin-bottom: 3rem;
-  display: grid;
-}
-#quiz-front {
-  padding: 2rem;
-}
-#intro p {
-  font-size: 1.2rem;
-}
-#intro {
-  margin-bottom: 3rem;
-}
-
 /* Results page  */
 article.result {
   display: grid;
@@ -428,6 +431,7 @@ span {
   }
 }
 /* ***end-nav*** */
+
 /* // ~~~~~~~~~ quiz page // ~~~~~~~~~ */
 @media only screen and (max-width: 1200px) {
   .question {
@@ -819,4 +823,146 @@ p.category-title {
   font-weight: normal;
   padding: 1.5rem 3.2rem;
   margin-top: 3rem;
+}
+
+#allbeers-cta a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1430px) {
+  article.beer-card {
+    grid-template-columns: 1fr 2.5fr;
+  }
+}
+
+@media only screen and (max-width: 1374px) {
+  main.product-page {
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-top: 3rem;
+  }
+  article.beer-card {
+    grid-template-columns: 1fr 2.5fr;
+  }
+}
+
+@media only screen and (max-width: 1190px) {
+  main.product-page {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 3rem;
+  }
+  article.beer-card {
+    grid-template-columns: 1fr 2.7fr;
+  }
+}
+
+@media only screen and (max-width: 1093px) {
+  main.product-page {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 3rem;
+  }
+  article.beer-card {
+    grid-template-columns: 1fr;
+    grid-row-gap: 2rem;
+  }
+  section.product-image img {
+    padding: 1rem 4rem;
+    border-radius: 40px;
+    margin: 0 auto;
+  }
+}
+/* article.beer-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1em;
+  grid-row-gap: 100px;
+} */
+
+@media only screen and (max-width: 810px) {
+  main.product-page {
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    margin-top: 1.5rem;
+  }
+  article.beer-card {
+    grid-template-columns: 1fr;
+    grid-row-gap: 0.5rem;
+    padding-bottom: 0;
+  }
+  section.product-image img {
+    padding: 2rem 4rem;
+    border-radius: 40px;
+    margin: 0 auto;
+    max-width: 50%;
+  }
+  section.product-image {
+    padding-top: 0.5rem;
+  }
+  section.product-description h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 600;
+    line-height: 3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p.category-text {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-left: 0;
+    font-family: var(--secondary-font);
+    font-size: 0.7rem;
+    line-height: 1.1rem;
+  }
+
+  p.category-title {
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+    padding-left: 0;
+    font-family: var(--secondary-font);
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
+  .product-table {
+    width: 5%;
+    vertical-align: top;
+  }
+  .small-column {
+    width: 5%;
+    vertical-align: top;
+  }
+  .large-column {
+    padding-right: 0.5rem;
+  }
+  .other-beers h2 {
+    color: black;
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 1.3rem;
+  }
+
+  .other-beers ul li {
+    box-sizing: border-box;
+    padding: 0.6rem 1rem;
+    list-style: none;
+    display: inline-block;
+    font-size: 0.7rem;
+    border-style: solid;
+    border-color: var(--color-5);
+    border-width: medium;
+    border-radius: 50px;
+    margin: 0.1rem auto;
+  }
+  #allbeers-cta {
+    font-size: 1.1rem;
+    font-weight: normal;
+    padding: 1.2rem 3rem;
+    margin-top: 3rem;
+  }
 }
