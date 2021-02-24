@@ -7,13 +7,13 @@
 :root {
   --bg-color: rgb(249, 168, 66);
   --link-color: rgba(255, 111, 111);
-  --link-hover-color: rgba(26, 29, 42);
+  --link-hover-color: black;
   --color-4: rgba(255, 235, 209);
   --color-5: rgba(255, 101, 80, 0.4);
 
   --primary-font: "Poppins", sans-serif;
   --secondary-font: "Roboto", sans-serif;
-  --main-text-color: rgba(26, 29, 42);
+  --main-text-color: black;
   --secondary-text-color: white;
 
   --white-space: 1rem;
@@ -22,9 +22,10 @@ h1,
 h2 {
   font-family: var(--primary-font);
   color: var(--link-hover-color);
-  font-weight: bold;
+  font-weight: 600;
   font-size: 3rem;
-  font-weight: bold;
+  line-height: 3.6rem;
+  padding-bottom: 2rem;
 }
 
 html {
@@ -37,30 +38,38 @@ img {
   height: auto;
 }
 button {
-  padding: 1.5rem;
-
+  padding: 1.5rem 4rem;
   text-align: center;
   text-decoration: none;
-  font: bold 2.3em/1 var(--primary-font);
   letter-spacing: 1px;
-  color: white;
-
-  border-radius: 49px;
+  border-radius: 50px;
   border: none;
+  color: white;
   background-color: var(--link-color);
-
   cursor: pointer;
-  margin: 1rem 2rem 2rem 0;
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 3px 37px 37px -9px rgba(26, 29, 42, 0.36);
 }
 
 .secondary-button {
-  color:rgba(255, 111, 111);
-  background: white; 
-  border-color: pink;
-  border-style:double;
-  font-size: 1rem;
+  color: white;
+  background-color: black;
+  font-size: 1.3rem;
+  padding: 1.5rem 4rem;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  box-shadow: 3px 37px 37px -9px rgba(26, 29, 42, 0.36);
 }
 
 button:hover {
@@ -71,8 +80,8 @@ button:hover {
 /* CSS FOR HOMEPAGE */
 
 .home-main {
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 #quiz-front p {
@@ -82,10 +91,8 @@ button:hover {
 #quiz-front {
   background-image: url(../img/bg.jpg);
   background-position: center;
-  margin-left: 0;
-  margin-right: 0;
-  /* position: relative;
-  overflow: hidden; */
+  padding-left: 0rem;
+  padding-right: 0rem;
   margin-bottom: 3rem;
 }
 #quiz-front h1,
@@ -125,34 +132,33 @@ footer {
 }
 #home-curiosities article {
   background-color: var(--link-color);
-  border-radius: 40px;
+  border-radius: 50px;
   display: flex;
   flex-direction: column;
   color: white;
-  margin: 0rem;
-  margin-bottom: 3rem;
-  padding: 2rem;
+  margin: 0;
+  padding: 2.5rem;
+  justify-content: center;
 }
 #home-curiosities article img {
-  width: 40%;
+  width: 35%;
   display: block;
   margin: 0 auto;
 }
 #home-curiosities article p {
-  font-size: 1.6rem;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  padding-top: 1.3rem;
 }
 #home-curiosities {
   margin-bottom: 3rem;
   display: grid;
 }
-#quiz-front {
-  padding: 2rem;
-}
 #intro p {
   font-size: 1.2rem;
 }
 #intro {
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
 }
 
 /* *** previous navigation ***  */
@@ -213,10 +219,10 @@ nav ul li {
 }
 
 #logo {
-width: 12.5%;
-position:absolute;
-left:0%; 
-top: 0;
+  width: 12.5%;
+  position: absolute;
+  left: 0%;
+  top: 0;
 }
 
 /* Here starts the css for the quiz */
@@ -417,7 +423,7 @@ span {
     float: right;
     display: block;
   }
-  .topnav{
+  .topnav {
     font-size: 1rem;
   }
 }
@@ -530,10 +536,9 @@ span {
 /* ~~~~~~~~~ end quiz page ~~~~~~~~~  */
 
 @media only screen and (min-width: 600px) {
-
   .home-main {
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-left: 12rem;
+    margin-right: 12rem;
   }
   main {
     margin: 0;
@@ -547,26 +552,26 @@ span {
   }
   #home-curiosities {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 3rem;
+    grid-column-gap: 2rem;
   }
   #home-curiosities h2 {
     grid-column: 1 / -1;
   }
-  h1,
-  h1 {
-    font-size: 5rem;
+  #quiz-front h1 {
+    font-size: 4.5rem;
+    line-height: 5rem;
+    padding-bottom: 1.7rem;
+    padding-top: 3rem;
   }
   #quiz-front {
     background-image: url(../img/bg.jpg);
     margin-left: 0;
     margin-right: 0;
-    /* position: relative;
-    overflow: hidden; */
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     background-position: right;
-    padding: 10rem;
-    padding-bottom: 3rem;
-    padding-top: 3rem;
+    padding: 12rem;
+    padding-bottom: 4rem;
+    padding-top: 7rem;
   }
   #quiz-front h1,
   #quiz-front p,
@@ -583,9 +588,13 @@ span {
   }
   #quiz-front p {
     font-size: 1.5rem;
+    line-height: 2.4rem;
+    padding-top: 0.5rem;
   }
   #intro p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    padding-bottom: 1.5rem;
   }
 
   /* result page  */
@@ -596,117 +605,112 @@ span {
   }
 
   .loader {
-    width:100%;
-    height:100%;
-    position:absolute;
-    top:0;
-    left:0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     background-color: var(--color-4);
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
   }
   #beery {
     max-width: 50px;
-    position:relative;
+    position: relative;
   }
 
   .animated {
-    animation-name:jumpybeer;
+    animation-name: jumpybeer;
     animation-duration: 1s;
     animation-iteration-count: infinite;
   }
 
   @keyframes jumpybeer {
     0% {
-      transform: translateY(20px); }
-      100%{
-        transform:translateY(-20px)
-      }
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(-20px);
     }
   }
+}
 
-  article.result {
+article.result {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2rem;
+  background-color: var(--link-color);
+  padding-left: 6rem;
+  padding-right: 6rem;
+  border-radius: 80px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.showresult {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 3rem;
+  grid-column: 1 / -1;
+}
+.showresult p {
+  margin: 0 auto;
+  padding-right: 3rem;
+  color: var(--secondary-text-color);
+  font-size: 1.6rem;
+}
+
+#youare h2 {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 40px;
+  color: var(--main-text-color);
+  margin-bottom: 4rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+span {
+  color: var(--color-5);
+}
+.result-wrapper {
+  padding: 1rem;
+  font-size: 1.2rem;
+  color: var(--secondary-text-color);
+}
+#youare p {
+  font-size: 1rem;
+}
+.button-white {
+  background-color: white;
+  color: var(--link-color);
+  margin-bottom: 0;
+}
+.result-wrapper button {
+  display: block;
+  margin: 0;
+  width: 70%;
+  font-size: 1.4rem;
+}
+a {
+  text-decoration: none;
+}
+.result-wrapper a {
+  justify-self: center;
+}
+
+@media only screen and (max-width: 1600px) {
+  #father {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 2rem;
-    background-color: var(--link-color);
-    padding-left: 6rem;
-    padding-right: 6rem;
-    border-radius: 80px;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
   }
-  .showresult {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin-top: 3rem;
-    grid-column: 1 / -1;
-  }
-  .showresult p {
-    margin: 0 auto;
-    padding-right: 3rem;
-    color: var(--secondary-text-color);
-    font-size: 1.6rem;
-  }
-
-  #youare h2 {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 40px;
-    color: var(--main-text-color);
-    margin-bottom: 4rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-  }
-  span {
-    color: var(--color-5);
-  }
-  .result-wrapper {
-    padding: 1rem;
-    font-size: 1.2rem;
-    color: var(--secondary-text-color);
-  }
-  #youare p {
-    font-size: 1rem;
-  }
-  .button-white {
-    background-color: white;
-    color: var(--link-color);
-    margin-bottom: 0;
-  }
-  .result-wrapper button {
-    display: block;
-    margin: 0;
-    width: 70%;
-    font-size: 1.4rem;
-  }
-  a {
-    text-decoration: none;
-  }
-  .result-wrapper a {
-    justify-self:center;
-  }
-
-
-  @media only screen and (max-width: 1600px) {
-    #father {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-
-
-
-
-  }
-
+}
 
 /* Here goes the css for the beer-types.html page */
 
@@ -766,97 +770,95 @@ span {
 
 #beer-types-page #button-category a {
   align-self: center;
-    }
+}
 
-    .button-white {
-      background-color: rgba(26, 29, 42);
-      color: white; 
-    }
+.button-white {
+  background-color: rgba(26, 29, 42);
+  color: white;
+}
 
-
-    /* **** logo adjustments ****  */
+/* **** logo adjustments ****  */
 @media screen and (max-width: 1338px) {
-  #logo{
+  #logo {
     width: 13%;
   }
 }
 @media screen and (max-width: 1202px) {
-  #logo{
+  #logo {
     width: 14%;
   }
 }
 @media screen and (max-width: 1064px) {
-  #logo{
+  #logo {
     width: 14.5%;
   }
 }
 @media screen and (max-width: 958px) {
-  #logo{
+  #logo {
     width: 15.5%;
   }
 }
 @media screen and (max-width: 850px) {
-  #logo{
+  #logo {
     width: 17%;
   }
 }
 @media screen and (max-width: 800px) {
-  #logo{
+  #logo {
     width: 20%;
   }
-} 
+}
 @media screen and (max-width: 770px) {
-  #logo{
+  #logo {
     width: 21%;
   }
-} 
+}
 @media screen and (max-width: 680px) {
-  #logo{
+  #logo {
     width: 22.5%;
   }
-} 
+}
 @media screen and (max-width: 645px) {
-  #logo{
+  #logo {
     width: 23%;
   }
-} 
+}
 @media screen and (max-width: 610px) {
-  #logo{
+  #logo {
     width: 24%;
   }
-} 
+}
 @media screen and (max-width: 570px) {
-  #logo{
+  #logo {
     width: 25%;
   }
-} 
+}
 @media screen and (max-width: 540px) {
-  #logo{
+  #logo {
     width: 27%;
   }
-} 
+}
 @media screen and (max-width: 500px) {
-  #logo{
+  #logo {
     width: 28%;
   }
-} 
+}
 @media screen and (max-width: 470px) {
-  #logo{
+  #logo {
     width: 29%;
   }
-} 
+}
 @media screen and (max-width: 420px) {
-  #logo{
+  #logo {
     width: 31.5%;
   }
-} 
+}
 @media screen and (max-width: 390px) {
-  #logo{
+  #logo {
     width: 33%;
   }
-} 
+}
 /* **** logo adjustments ****  */
-
 
 /* #quiz-front img {
     position: absolute;
@@ -867,7 +869,6 @@ span {
 
 /* opacity: 0.8; */
 
-
 /* ***** animations&transitions Tal***** */
 
 /* **index** */
@@ -877,60 +878,57 @@ span {
 
 @keyframes transitionIn {
   from {
-opacity: 0;
-transform: rotateX(-10deg);
+    opacity: 0;
+    transform: rotateX(-10deg);
   }
   to {
-      opacity: 1;
-      transform: rotateX(0);
+    opacity: 1;
+    transform: rotateX(0);
   }
 }
 
-main h1{
+main h1 {
   animation: transitionIn 0.8s;
 }
 
-
 @keyframes transitionIn {
   from {
-opacity: 0;
-transform: rotateX(-10deg);
+    opacity: 0;
+    transform: rotateX(-10deg);
   }
   to {
-      opacity: 1;
-      transform: rotateX(0);
+    opacity: 1;
+    transform: rotateX(0);
   }
 }
 
-main p{
+main p {
   animation: transitionIn 1.5s;
 }
 
 @keyframes transitionIn {
   from {
-opacity: 0;
-transform: rotateX(-10deg);
+    opacity: 0;
+    transform: rotateX(-10deg);
   }
   to {
-      opacity: 1;
-      transform: rotateX(0);
+    opacity: 1;
+    transform: rotateX(0);
   }
 }
 
-#quiz-front #cta{
+#quiz-front #cta {
   animation: transitionIn 2.5s;
 }
 
-
-
 @keyframes transitionIn {
   from {
-opacity: 0;
-transform: rotateX(-10deg);
+    opacity: 0;
+    transform: rotateX(-10deg);
   }
   to {
-      opacity: 1;
-      transform: rotateX(0);
+    opacity: 1;
+    transform: rotateX(0);
   }
 }
 
@@ -941,15 +939,14 @@ main {
 
 @keyframes transitionIn {
   from {
-opacity: 0;
-transform: rotateX(-10deg);
+    opacity: 0;
+    transform: rotateX(-10deg);
   }
   to {
-      opacity: 1;
-      transform: rotateX(0);
+    opacity: 1;
+    transform: rotateX(0);
   }
 }
-
 
 /* ----------------------- beer.html page -------------------------- */
 
@@ -966,11 +963,9 @@ article.beer-card {
   padding-top: 0rem;
   padding-bottom: 2rem;
 }
-
 section.product-image {
   padding-top: 1rem;
 }
-
 section.product-image img {
   border-style: solid;
   border-color: var(--color-5);
@@ -979,7 +974,6 @@ section.product-image img {
   border-radius: 40px;
   margin: 0 auto;
 }
-
 section.product-description h1 {
   font-size: 3.3rem;
   text-transform: uppercase;
@@ -989,7 +983,6 @@ section.product-description h1 {
   margin-top: 0.8rem;
   margin-bottom: 1.6rem;
 }
-
 p.category-text {
   margin-top: 0;
   margin-bottom: 1.3rem;
@@ -998,7 +991,6 @@ p.category-text {
   font-size: 0.85rem;
   line-height: 1.5rem;
 }
-
 p.category-title {
   font-weight: bold;
   margin-top: 0;
@@ -1019,14 +1011,12 @@ p.category-title {
 .large-column {
   padding-right: 1.9rem;
 }
-
 .breadcrumbs a {
   font-family: var(--secondary-font);
   text-decoration: none;
   color: black;
   text-transform: uppercase;
 }
-
 .other-beers h2 {
   color: black;
   font-size: 2.5rem;
@@ -1034,7 +1024,6 @@ p.category-title {
   font-weight: 600;
   margin-bottom: 1.3rem;
 }
-
 .other-beers ul li {
   box-sizing: border-box;
   padding: 1rem 1.2rem;
@@ -1047,14 +1036,12 @@ p.category-title {
   border-radius: 50px;
   margin: 0.2rem;
 }
-
 #allbeers-cta {
   font-size: 1.5rem;
   font-weight: normal;
   padding: 1.5rem 3.2rem;
   margin-top: 3rem;
 }
-
 #allbeers-cta a {
   text-decoration: none;
 }
@@ -1085,6 +1072,11 @@ p.category-title {
   article.beer-card {
     grid-template-columns: 1fr 2.7fr;
   }
+  #home-curiosities {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+    row-gap: 2rem;
+  }
 }
 
 @media only screen and (max-width: 1093px) {
@@ -1102,13 +1094,17 @@ p.category-title {
     border-radius: 40px;
     margin: 0 auto;
   }
+  .home-main {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+  #quiz-front {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 4rem;
+    padding-top: 7rem;
+  }
 }
-/* article.beer-card {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 1em;
-  grid-row-gap: 100px;
-} */
 
 @media only screen and (max-width: 810px) {
   main.product-page {
@@ -1139,7 +1135,6 @@ p.category-title {
     margin-top: 0.5rem;
     margin-bottom: 1rem;
   }
-
   p.category-text {
     margin-top: 0;
     margin-bottom: 1rem;
@@ -1148,7 +1143,6 @@ p.category-title {
     font-size: 0.7rem;
     line-height: 1.1rem;
   }
-
   p.category-title {
     font-weight: bold;
     margin-top: 0;
@@ -1176,7 +1170,6 @@ p.category-title {
     font-weight: 600;
     margin-bottom: 1.3rem;
   }
-
   .other-beers ul li {
     box-sizing: border-box;
     padding: 0.6rem 1rem;
@@ -1194,5 +1187,15 @@ p.category-title {
     font-weight: normal;
     padding: 1.2rem 3rem;
     margin-top: 3rem;
+  }
+  #home-curiosities {
+    grid-template-columns: 1fr;
+    grid-column-gap: 2rem;
+    row-gap: 2rem;
+  }
+  #home-curiosities article img {
+    width: 20%;
+    display: block;
+    margin: 0 auto;
   }
 }
