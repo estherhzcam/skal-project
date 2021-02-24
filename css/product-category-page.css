@@ -1,0 +1,38 @@
+@media screen and (max-width:950px) {
+      #beer-types-page h1 {
+font-size: 300%     }
+    }
+    @media screen and (max-width:750px) {
+      #beer-types-page {
+        margin: 10vh 5rem 10vh 5rem;
+    }
+    @media screen and (max-width:550px) {
+      #beer-types-page h1 {
+        font-size: 250%;
+       }
+      #beer-types-page {
+        margin: 7vh 3rem 7vh 3rem;
+    }
+    @media screen and (max-width:400px) {
+      #beer-types-page h1 {
+        font-size: 200%;
+       }
+      #beer-types-page {
+        margin: 5vh 1rem 5vh 1rem;
+    }
+}
+    @media screen and (max-width:300px) {
+      #beer-types-page h1 {
+        font-size: 150%;
+        margin-bottom: -3vh;
+       }
+       #beer-types-page #intro {
+         margin-bottom: 2vh;
+       }
+       #beer-types-page #beers-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 2rem;
+        margin-bottom: 5rem;
+      }
+    }

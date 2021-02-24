@@ -710,6 +710,30 @@ span {
 
 /* Here goes the css for the beer-types.html page */
 
+#beer-types-page {
+  margin: 10vh 10rem 10vh 10rem;
+  }
+
+  #beer-types-page h1, #subcat {
+    margin-top: 5vh;
+  }
+  
+  #beer-types-page #intro {
+    margin: 2vh 5vw 5vh 0;
+  }
+  
+  #beer-types-page #intro, #beer-types-page h1 {
+  margin-left: 3vw;
+  }
+  
+  #beer-types-page #intro-subcat {
+    margin: 5vh 5vw 5vh 0;
+  }
+  
+  #beer-types-page #intro-subcat, #subcat {
+  margin-left: 3vw;
+  }
+
 #beer-types-page #beers-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -767,6 +791,9 @@ span {
 #beer-types-page #button-category a {
   align-self: center;
     }
+
+
+    /*-------------------end category-subcategory page---------------------*/
 
     .button-white {
       background-color: rgba(26, 29, 42);
