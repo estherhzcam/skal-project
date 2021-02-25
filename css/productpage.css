@@ -31,6 +31,9 @@ section.product-description h1 {
   margin-top: 0.8rem;
   margin-bottom: 1.6rem;
 }
+.breadcrumbs {
+  padding-bottom: 2rem;
+}
 p.category-text {
   margin-top: 0;
   margin-bottom: 1.3rem;
@@ -65,12 +68,14 @@ p.category-title {
   color: black;
   text-transform: uppercase;
 }
-.other-beers h2 {
+h2 {
   color: black;
   font-size: 2.5rem;
   line-height: 2.7rem;
   font-weight: 600;
   margin-bottom: 1.3rem;
+  width: 100%;
+  padding-bottom: 0;
 }
 .other-beers ul li {
   box-sizing: border-box;
@@ -84,11 +89,23 @@ p.category-title {
   border-radius: 50px;
   margin: 0.2rem;
 }
+
+ul {
+  padding: 0;
+}
+
+.other-beers {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
 #allbeers-cta {
   font-size: 1.5rem;
   font-weight: normal;
   padding: 1.5rem 3.2rem;
-  margin-top: 3rem;
 }
 #allbeers-cta a {
   text-decoration: none;
@@ -196,7 +213,7 @@ p.category-title {
   .large-column {
     padding-right: 0.5rem;
   }
-  .other-beers h2 {
+  h2 {
     color: black;
     font-size: 1.7rem;
     line-height: 2.2rem;
