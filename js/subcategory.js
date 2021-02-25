@@ -53,4 +53,5 @@ function showBeers(beer) {
   mainEl.appendChild(clone);
 
   document.querySelector(".breadtype").textContent = beer.Category;
+  document.querySelector("h1").textContent = beer.Category;
 }
