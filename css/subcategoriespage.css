@@ -89,6 +89,14 @@
   color: white;
 }
 
+.breadsingle,
+.breadcrumbs a {
+  font-family: var(--secondary-font);
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
 @media screen and (max-width: 950px) {
   .beer-types-page h1 {
     font-size: 300%;
