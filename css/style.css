@@ -788,7 +788,7 @@ a {
   margin-bottom: 5rem;
 }
 
-#beer-types-page #beers-grid section {
+.beer-types-page #beers-grid section {
   background-color: var(--color-5);
   padding: 1rem 1rem 1rem 1rem;
   border-radius: 40px;
@@ -798,45 +798,45 @@ a {
   justify-content: center;
 }
 
-#beer-types-page #beers-grid section h3 {
+.beer-types-page #beers-grid section h3 {
   text-align: center;
 }
 
-#beer-types-page #beers-grid section img {
+.beer-types-page #beers-grid section img {
   max-width: 100%;
   max-height: 15rem;
 }
 
-#beer-types-page article a:link {
+.beer-types-page article a:link {
   text-decoration: none;
   color: black;
 }
-#beer-types-page article a:visited {
+.beer-types-page article a:visited {
   text-decoration: none;
   color: black;
 }
 
-#beer-types-page article section:hover {
+.beer-types-page article section:hover {
   transform: scale(1.1);
   transition: transform 0.2s;
   box-shadow: 3px 37px 37px -9px rgba(26, 29, 42, 0.36);
   cursor: pointer;
 }
 
-#beer-types-page #button-category {
+.beer-types-page #button-category {
   display: flex;
   flex-direction: column;
 }
-#beer-types-page #button-category h3 {
+.beer-types-page #button-category h3 {
   text-align: center;
 }
-#beer-types-page #button-category button {
-  background-color: #ED7874; 
+.beer-types-page #button-category button {
+  background-color: black;
   box-shadow: 3px 37px 37px -9px rgba(26, 29, 42, 0.36);
   font-size: 1.2rem;
   }
 
-#beer-types-page #button-category a {
+.beer-types-page #button-category a {
   align-self: center;
 }
 
