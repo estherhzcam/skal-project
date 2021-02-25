@@ -49,7 +49,7 @@ function showBeers(beer) {
 
   clone.querySelector("a").href = `beer.html?id=${beer._id}`;
 
-  const mainEl = document.querySelector("#beers-grid");
+  const mainEl = document.querySelector(".beers-grid-subcat");
   mainEl.appendChild(clone);
 
   document.querySelector(".breadtype").textContent = beer.Category;

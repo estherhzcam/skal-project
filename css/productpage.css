@@ -1,0 +1,226 @@
+/* ----------------------- beer.html page -------------------------- */
+
+main.product-page {
+  margin-left: 12rem;
+  margin-right: 12rem;
+  margin-top: 3rem;
+}
+article.beer-card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 3rem;
+  margin: 0 auto;
+  padding-top: 0rem;
+  padding-bottom: 2rem;
+}
+section.product-image {
+  padding-top: 1rem;
+}
+section.product-image img {
+  border-style: solid;
+  border-color: var(--color-5);
+  border-width: medium;
+  padding: 1rem 5rem;
+  border-radius: 40px;
+  margin: 0 auto;
+}
+section.product-description h1 {
+  font-size: 3.3rem;
+  text-transform: uppercase;
+  color: black;
+  font-weight: 600;
+  line-height: 3rem;
+  margin-top: 0.8rem;
+  margin-bottom: 1.6rem;
+}
+p.category-text {
+  margin-top: 0;
+  margin-bottom: 1.3rem;
+  padding-left: 0.4rem;
+  font-family: var(--secondary-font);
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+}
+p.category-title {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+  padding-left: 0.4rem;
+  font-family: var(--secondary-font);
+  font-size: 0.9rem;
+  line-height: 1rem;
+}
+.product-table {
+  width: 5%;
+  vertical-align: top;
+}
+.small-column {
+  width: 5%;
+  vertical-align: top;
+}
+.large-column {
+  padding-right: 1.9rem;
+}
+.breadcrumbs a {
+  font-family: var(--secondary-font);
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+.other-beers h2 {
+  color: black;
+  font-size: 2.5rem;
+  line-height: 2.7rem;
+  font-weight: 600;
+  margin-bottom: 1.3rem;
+}
+.other-beers ul li {
+  box-sizing: border-box;
+  padding: 1rem 1.2rem;
+  list-style: none;
+  display: inline-block;
+  font-size: 1rem;
+  border-style: solid;
+  border-color: var(--color-5);
+  border-width: medium;
+  border-radius: 50px;
+  margin: 0.2rem;
+}
+#allbeers-cta {
+  font-size: 1.5rem;
+  font-weight: normal;
+  padding: 1.5rem 3.2rem;
+  margin-top: 3rem;
+}
+#allbeers-cta a {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1430px) {
+  article.beer-card {
+    grid-template-columns: 1fr 2.5fr;
+  }
+}
+
+@media only screen and (max-width: 1374px) {
+  main.product-page {
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-top: 3rem;
+  }
+  article.beer-card {
+    grid-template-columns: 1fr 2.5fr;
+  }
+}
+
+@media only screen and (max-width: 1190px) {
+  main.product-page {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 3rem;
+  }
+  article.beer-card {
+    grid-template-columns: 1fr 2.7fr;
+  }
+}
+
+@media only screen and (max-width: 1093px) {
+  main.product-page {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 3rem;
+  }
+  article.beer-card {
+    grid-template-columns: 1fr;
+    grid-row-gap: 2rem;
+  }
+  section.product-image img {
+    padding: 1rem 4rem;
+    border-radius: 40px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  main.product-page {
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    margin-top: 1.5rem;
+  }
+  article.beer-card {
+    grid-template-columns: 1fr;
+    grid-row-gap: 0.5rem;
+    padding-bottom: 0;
+  }
+  section.product-image img {
+    padding: 2rem 4rem;
+    border-radius: 40px;
+    margin: 0 auto;
+    max-width: 50%;
+  }
+  section.product-image {
+    padding-top: 0.5rem;
+  }
+  section.product-description h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 600;
+    line-height: 3rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  p.category-text {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-left: 0;
+    font-family: var(--secondary-font);
+    font-size: 0.7rem;
+    line-height: 1.1rem;
+  }
+  p.category-title {
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+    padding-left: 0;
+    font-family: var(--secondary-font);
+    font-size: 0.7rem;
+    line-height: 1rem;
+  }
+  .product-table {
+    width: 5%;
+    vertical-align: top;
+  }
+  .small-column {
+    width: 5%;
+    vertical-align: top;
+  }
+  .large-column {
+    padding-right: 0.5rem;
+  }
+  .other-beers h2 {
+    color: black;
+    font-size: 1.7rem;
+    line-height: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 1.3rem;
+  }
+  .other-beers ul li {
+    box-sizing: border-box;
+    padding: 0.6rem 1rem;
+    list-style: none;
+    display: inline-block;
+    font-size: 0.7rem;
+    border-style: solid;
+    border-color: var(--color-5);
+    border-width: medium;
+    border-radius: 50px;
+    margin: 0.1rem auto;
+  }
+  #allbeers-cta {
+    font-size: 1.1rem;
+    font-weight: normal;
+    padding: 1.2rem 3rem;
+    margin-top: 3rem;
+  }
+}

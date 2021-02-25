@@ -77,46 +77,6 @@ button:hover {
   transition: transform 0.5s;
 }
 
-/* CSS FOR HOMEPAGE */
-
-.home-main {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-#quiz-front p {
-  font-size: 1.2rem;
-}
-
-#quiz-front {
-  background-image: url(../img/bg.jpg);
-  background-position: center;
-  padding-left: 0rem;
-  padding-right: 0rem;
-  margin-bottom: 3rem;
-}
-#quiz-front h1,
-#quiz-front p,
-#cta {
-  /* position: relative;
-  z-index: 2; */
-  color: var(--secondary-text-color);
-}
-#cta {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 4rem;
-  margin-top: 4rem;
-}
-/* #quiz-front img {
-  position: absolute;
-  width: 100%;
-  height: 700px;
-  left: 0;
-  top: 0;
- */
-
-/* opacity: 0.8; */
 footer {
   background-color: var(--bg-color);
   color: var(--main-text-color);
@@ -129,36 +89,6 @@ footer {
   display: block;
   margin: 0 auto;
   margin-bottom: 5rem;
-}
-#home-curiosities article {
-  background-color: var(--link-color);
-  border-radius: 50px;
-  display: flex;
-  flex-direction: column;
-  color: white;
-  margin: 0;
-  padding: 2.5rem;
-  justify-content: center;
-}
-#home-curiosities article img {
-  width: 35%;
-  display: block;
-  margin: 0 auto;
-}
-#home-curiosities article p {
-  font-size: 1.1rem;
-  line-height: 1.5rem;
-  padding-top: 1.3rem;
-}
-#home-curiosities {
-  margin-bottom: 3rem;
-  display: grid;
-}
-#intro p {
-  font-size: 1.2rem;
-}
-#intro {
-  margin-bottom: 2.5rem;
 }
 
 /* *** previous navigation ***  */
@@ -219,10 +149,10 @@ nav ul li {
 }
 
 #logo {
-width: 11.5%;
-position:absolute;
-left:0%; 
-top: 0;
+  width: 11.5%;
+  position: absolute;
+  left: 0%;
+  top: 0;
 }
 
 /* Here starts the css for the quiz */
@@ -361,50 +291,7 @@ top: 0;
 
 .question a:hover {
   text-decoration: none;
-  color: black;}
-  
-footer {
-  background-color: var(--bg-color);
-  color: var(--main-text-color);
-  font-family: var(--secondary-font);
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.8rem;
-}
-#allbeers-cta {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 5rem;
-  font-size: 1.2rem;
-  background-color: #1B1D29;
-}
-#home-curiosities article {
-  background-color: var(--link-color);
-  border-radius: 40px;
-  display: flex;
-  flex-direction: column;
-  color: white;
-  margin: 0rem;
-  margin-bottom: 3rem;
-  padding: 2rem;
-}
-#home-curiosities article img {
-  width: 40%;
-  display: block;
-  margin: 0 auto;
-}
-#home-curiosities article p {
-  font-size: 1.6rem;
-}
-#home-curiosities {
-  margin-bottom: 3rem;
-  display: grid;
-}
-#quiz-front {
-  padding: 2rem;
-}
-#intro p {
-  font-size: 1.2rem;
+  color: black;
 }
 
 .question a:active {
@@ -533,73 +420,11 @@ footer {
 }
 /* ~~~~~~~~~ end quiz page ~~~~~~~~~  */
 
-@media only screen and (min-width: 600px) {
-  .home-main {
-    margin-left: 12rem;
-    margin-right: 12rem;
-  }
-  main {
-    margin: 0;
-  }
-  nav {
-    margin-bottom: 0;
-  }
-  nav ul li {
-    align-self: center;
-    padding-left: 3rem;
-  }
-  #home-curiosities {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 2rem;
-  }
-  #home-curiosities h2 {
-    grid-column: 1 / -1;
-  }
-  #quiz-front h1 {
-    font-size: 4.5rem;
-    line-height: 5rem;
-    padding-bottom: 1.7rem;
-    padding-top: 3rem;
-  }
-  #quiz-front {
-    background-image: url(../img/bg.jpg);
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 4rem;
-    background-position: right;
-    padding: 12rem;
-    padding-bottom: 4rem;
-    padding-top: 7rem;
-  }
-  #quiz-front h1,
-  #quiz-front p,
-  #cta {
-    /* position: relative;
-    z-index: 2; */
-    color: var(--secondary-text-color);
-  }
-  #cta {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 4rem;
-    margin-top: 4rem;
-  }
-  #quiz-front p {
-    font-size: 1.5rem;
-    line-height: 2.4rem;
-    padding-top: 0.5rem;
-  }
-  #intro p {
-    font-size: 1.3rem;
-    line-height: 2.3rem;
-    padding-bottom: 1.5rem;
-  }
+/* ------------------result page------------------------  */
 
-  /* ------------------result page------------------------  */
+/*loader attempt code*/
 
-  /*loader attempt code*/
-
-  /* .hide {
+/* .hide {
     opacity: 0;
     pointer-events: none;
   }
@@ -712,90 +537,6 @@ a {
   }
 }
 
-/* Here goes the css for the beer-types.html page */
-
-#beer-types-page {
-  margin: 10vh 10rem 10vh 10rem;
-  }
-
-  #beer-types-page h1, #subcat {
-    margin-top: 5vh;
-  }
-  
-  #beer-types-page #intro {
-    margin: 2vh 5vw 5vh 0;
-  }
-  
-  #beer-types-page #intro, #beer-types-page h1 {
-  margin-left: 3vw;
-  }
-  
-  #beer-types-page #intro-subcat {
-    margin: 5vh 5vw 5vh 0;
-  }
-  
-  #beer-types-page #intro-subcat, #subcat {
-  margin-left: 3vw;
-  }
-
-#beer-types-page #beers-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 2rem;
-  margin-bottom: 5rem;
-}
-
-.beer-types-page #beers-grid section {
-  background-color: var(--color-5);
-  padding: 1rem 1rem 1rem 1rem;
-  border-radius: 40px;
-  margin: 0 1rem 0 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.beer-types-page #beers-grid section h3 {
-  text-align: center;
-}
-
-.beer-types-page #beers-grid section img {
-  max-width: 100%;
-  max-height: 15rem;
-}
-
-.beer-types-page article a:link {
-  text-decoration: none;
-  color: black;
-}
-.beer-types-page article a:visited {
-  text-decoration: none;
-  color: black;
-}
-
-.beer-types-page article section:hover {
-  transform: scale(1.1);
-  transition: transform 0.2s;
-  box-shadow: 3px 37px 37px -9px rgba(26, 29, 42, 0.36);
-  cursor: pointer;
-}
-
-.beer-types-page #button-category {
-  display: flex;
-  flex-direction: column;
-}
-.beer-types-page #button-category h3 {
-  text-align: center;
-}
-.beer-types-page #button-category button {
-  background-color: black;
-  box-shadow: 3px 37px 37px -9px rgba(26, 29, 42, 0.36);
-  font-size: 1.2rem;
-  }
-
-.beer-types-page #button-category a {
-  align-self: center;
-}
 
 .button-white {
   background-color: rgba(26, 29, 42);
@@ -834,37 +575,37 @@ a {
   }
 }
 @media screen and (max-width: 770px) {
-  #logo{
+  #logo {
     width: 20%;
   }
 }
 @media screen and (max-width: 680px) {
-  #logo{
+  #logo {
     width: 21%;
   }
 }
 @media screen and (max-width: 645px) {
-  #logo{
+  #logo {
     width: 22%;
   }
 }
 @media screen and (max-width: 610px) {
-  #logo{
+  #logo {
     width: 23%;
   }
 }
 @media screen and (max-width: 570px) {
-  #logo{
+  #logo {
     width: 24%;
   }
 }
 @media screen and (max-width: 540px) {
-  #logo{
+  #logo {
     width: 25%;
   }
 }
 @media screen and (max-width: 500px) {
-  #logo{
+  #logo {
     width: 26.5%;
   }
 }
@@ -874,7 +615,7 @@ a {
   }
 }
 @media screen and (max-width: 420px) {
-  #logo{
+  #logo {
     width: 30%;
   }
 }
@@ -882,12 +623,12 @@ a {
   #logo {
     width: 33%;
   }
-} 
+}
 @media screen and (max-width: 350px) {
-  #logo{
+  #logo {
     width: 36%;
   }
-} 
+}
 /* **** logo adjustments ****  */
 
 /* #quiz-front img {
@@ -978,8 +719,9 @@ main {
   }
 }
 
-/* ----------------------- beer.html page -------------------------- */
+/* /* ----------------------- beer.html page -------------------------- */
 
+/*
 main.product-page {
   margin-left: 12rem;
   margin-right: 12rem;
@@ -1229,3 +971,4 @@ p.category-title {
     margin: 0 auto;
   }
 }
+ */
