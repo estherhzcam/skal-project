@@ -42,7 +42,7 @@ function giveMeBeer(beer){
     const copy = template.cloneNode(true);
     copy.querySelector("#youare h2").innerHTML = beer.h2;
     copy.querySelector(".result-wrapper p").textContent = beer.description;
-    copy.querySelector(".result-wrapper a").href = `beer.html?id=${beer.id}`;
+    copy.querySelector("#cta-quiz a:first-child").href = `beer.html?id=${beer.id}`;
     const parent = document.querySelector("#father");
     parent.appendChild(copy)
 

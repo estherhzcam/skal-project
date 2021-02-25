@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/results.css">
     <title>Skal project quiz</title>
   </head>
   <body>
@@ -20,16 +21,11 @@
         </a>
           <a href="javascript:void(0);" style="font-size:30px;" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
-       
-        <!-- <ul>
-          <li>All types of beers</li>
-          <li>Take the quiz!</li>
-        </ul> -->
 
       </nav>
     </header>
 
-    <main>
+    <main id=results-page-main>
       <article class="result" id=father>
         
       </article>
@@ -47,14 +43,15 @@
       <div class="result-wrapper">
         <p>
         </p>
-        <a href="beer.html"><button class="button-white">Tell me more!</button></a        >
-
+        </div>
+        <div id=cta-quiz>
+          <a href="beer.html"><button class="button-white">Tell me more!</button></a>
         <p>Nah... It doesn't sound like me.</p>
-        <p>
-          <a href="quiz.html"><button class="secondary-button">Take another try</button></a
-          >
-        </p>
-      </div>
+          <a href="quiz.html">
+            <button class="secondary-button">Take another try</button>
+            </a>
+          </div>
+      
     </template>
     <footer>
       <p>
