@@ -51,15 +51,6 @@ function showBeers(beer) {
 
   const mainEl = document.querySelector("#beers-grid");
   mainEl.appendChild(clone);
+
+  document.querySelector(".breadtype").textContent = beer.Category;
 }
-
-
-
-document.querySelector(".beer-types-page").textContent = beer.subcategory;
-document.querySelector(
-  ".breadtype"
-).href = `subcategory.html?&category=${beer.Category}`;
-document.querySelector(".breadsingle").textContent = beer.subcategory;
-
-const mainEl = document.querySelector(".beer-types-page");
-mainEl.appendChild(clone);
