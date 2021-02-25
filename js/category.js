@@ -51,6 +51,6 @@ function showBeers(beer) {
 
   clone.querySelector("a").href = `subcategory.html?&category=${beer.Category}`;
 
-  const mainEl = document.querySelector("#beers-grid");
+  const mainEl = document.querySelector(".beers-grid-cat");
   mainEl.appendChild(clone);
 }

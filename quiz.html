@@ -1,115 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/quiz.css" />
     <title>Skal project quiz</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-       
-            <div class="topnav" id="myTopnav">
-                <div id="logo"><a href="index.html"><img src="img/logo1.svg" alt="logo-home"></a></div>
-                <a href="#" class="active"></a>
-                <a href="beer-types.html">All types of beers
-              </a>
-                <a href="quiz.html">Take the quiz!
-              </a>
-                <a href="javascript:void(0);" style="font-size:30px;" class="icon" onclick="myFunction()">&#9776;</a>
-              </div>
-        
+      <nav>
+        <div class="topnav" id="myTopnav">
+          <div id="logo">
+            <a href="index.html"><img src="img/logo1.svg" alt="logo-home" /></a>
+          </div>
+          <a href="#" class="active"></a>
+          <a href="beer-types.html">All types of beers </a>
+          <a href="quiz.html">Take the quiz! </a>
+          <a
+            href="javascript:void(0);"
+            style="font-size: 30px"
+            class="icon"
+            onclick="myFunction()"
+            >&#9776;</a
+          >
+        </div>
+
         <!-- <ul>
         <li>All types of beers</li>
         <li>Take the quiz!</li>
         </ul> -->
+      </nav>
+    </header>
 
-        </nav>
-        </header>
-        
-        <main>
-      
-        <article id=quiz>
-            <!-- <div id=arrow>◄</div>
+    <main>
+      <article id="quiz">
+        <!-- <div id=arrow>◄</div>
             <div><p id=currentquestion></p><p>/5</p> -->
-                <section class=question id=question1>
-                    <div id="switch">
-                        <div><p id=currentquestion></p><p>1/5</p>
-                </div>
-                </div>
-                    <h2>You are late for work, and your boss demands to know why. You...</h2>
-                    <img src="img/angry-boss.png" alt="angry-boss">
-                    <ul>
-                        <li class=answer id=answer1-1>Blame the bus, even though you cycle to work.</li>
-                        <li class=answer id=answer1-2>Blame the weather, even though it’s clear and sunny.</li>
-                        <li class=answer id=answer1-3>Play dead as if he was a predator, then run away and never look back.</li>
-                    </ul>
-                </section>
-                <section class=question id=question2>
-                    <div id="switch">
-                        <div><p id=currentquestion></p><p>2/5</p>
-                </div>
-                </div>
-                    <h2>It’s Valentine’s day and you forgot to buy your date a gift. You...</h2>
-                    <img src="img/valentine.png" alt="valentine">
-                    <ul>
-                        <li class=answer id=answer2-1>Buy a bow, stick it to your head and state you’re the present.</li>
-                        <li class=answer id=answer2-2>Order in sushi, hide all the boxes and claim you made it yourself. </li>
-                        <li class=answer id=answer2-3>Throw your phone to the ocean, run away and never look back.</li>
-                    </ul>
-                </section>
-                <section class=question id=question3>
-                    <div id="switch">
-                        <div><p id=currentquestion></p><p>3/5</p>
-                </div>
-                </div>
-                    <h2>You have 24 hours left to live. What do you do?</h2>
-                    <img src="img/out-of-time.png" alt="out-of-time">
-                    <ul>
-                        <li class=answer id=answer3-1>Give everybody you love and care a goodbye. </li>
-                        <li class=answer id=answer3-2>Throw yourself a pity party and invite your ex.</li>
-                        <li class=answer id=answer3-3>Buy a one way ticket to a Tropical island, run away and never look back.</li>
-                    </ul>
-                </section>
-                <section class=question id=question4>
-                    <div id="switch">
-                        <div><p id=currentquestion></p><p>4/5</p>
-                </div>
-                </div>
-                    <h2>It was a long and crazy day at work, and you just want to relax.</h2>
-                    <img src="img/tired-at-work.png" alt="tired-at-work">
-                    <ul>
-                        <li class=answer id=answer4-1>Call a friend to have a night out.</li>
-                        <li class=answer id=answer4-2>Hide under the blanket and cry yourself out.</li>
-                        <li class=answer id=answer4-3>Send a shameful txt to your boss, regret right after, run away and never look back.</li>
-                    </ul>
-                </section>
-                <section class=question id=question5>
-                    <div id="switch">
-                        <div><p id=currentquestion></p><p>5/5</p>
-                </div>
-                </div>
-                    <h2>You were bitten by a spider on a school trip and apparently there are webs coming out of your wrist. You...
-                    </h2>
-                    <img src="img/school-trip.png" alt="school-trip">
-                    <ul>
-                        <a id=answer5-1 href=""><li class=answer >Search on Google to find out you might have cancer.</li></a>
-                        <a id=answer5-2 href=""><li class=answer >Locate a potential criminal who has stolen a purse from an old lady.</li></a>
-                        <a id=answer5-3 href=""><li class=answer >Join the evil side, run away and never look back.</li></a>
-                    </ul>
-                </section>
+        <section class="question" id="question1">
+          <div id="switch">
+            <div>
+              <p id="currentquestion"></p>
+              <p>1/5</p>
+            </div>
+          </div>
+          <h2>
+            You are late for work, and your boss demands to know why. You...
+          </h2>
+          <img src="img/angry-boss.png" alt="angry-boss" />
+          <ul>
+            <li class="answer" id="answer1-1">
+              Blame the bus, even though you cycle to work.
+            </li>
+            <li class="answer" id="answer1-2">
+              Blame the weather, even though it’s clear and sunny.
+            </li>
+            <li class="answer" id="answer1-3">
+              Play dead as if he was a predator, then run away and never look
+              back.
+            </li>
+          </ul>
+        </section>
+        <section class="question" id="question2">
+          <div id="switch">
+            <div>
+              <p id="currentquestion"></p>
+              <p>2/5</p>
+            </div>
+          </div>
+          <h2>
+            It’s Valentine’s day and you forgot to buy your date a gift. You...
+          </h2>
+          <img src="img/valentine.png" alt="valentine" />
+          <ul>
+            <li class="answer" id="answer2-1">
+              Buy a bow, stick it to your head and state you’re the present.
+            </li>
+            <li class="answer" id="answer2-2">
+              Order in sushi, hide all the boxes and claim you made it yourself.
+            </li>
+            <li class="answer" id="answer2-3">
+              Throw your phone to the ocean, run away and never look back.
+            </li>
+          </ul>
+        </section>
+        <section class="question" id="question3">
+          <div id="switch">
+            <div>
+              <p id="currentquestion"></p>
+              <p>3/5</p>
+            </div>
+          </div>
+          <h2>You have 24 hours left to live. What do you do?</h2>
+          <img src="img/out-of-time.png" alt="out-of-time" />
+          <ul>
+            <li class="answer" id="answer3-1">
+              Give everybody you love and care a goodbye.
+            </li>
+            <li class="answer" id="answer3-2">
+              Throw yourself a pity party and invite your ex.
+            </li>
+            <li class="answer" id="answer3-3">
+              Buy a one way ticket to a Tropical island, run away and never look
+              back.
+            </li>
+          </ul>
+        </section>
+        <section class="question" id="question4">
+          <div id="switch">
+            <div>
+              <p id="currentquestion"></p>
+              <p>4/5</p>
+            </div>
+          </div>
+          <h2>
+            It was a long and crazy day at work, and you just want to relax.
+          </h2>
+          <img src="img/tired-at-work.png" alt="tired-at-work" />
+          <ul>
+            <li class="answer" id="answer4-1">
+              Call a friend to have a night out.
+            </li>
+            <li class="answer" id="answer4-2">
+              Hide under the blanket and cry yourself out.
+            </li>
+            <li class="answer" id="answer4-3">
+              Send a shameful txt to your boss, regret right after, run away and
+              never look back.
+            </li>
+          </ul>
+        </section>
+        <section class="question" id="question5">
+          <div id="switch">
+            <div>
+              <p id="currentquestion"></p>
+              <p>5/5</p>
+            </div>
+          </div>
+          <h2>
+            You were bitten by a spider on a school trip and apparently there
+            are webs coming out of your wrist. You...
+          </h2>
+          <img src="img/school-trip.png" alt="school-trip" />
+          <ul>
+            <a id="answer5-1" href=""
+              ><li class="answer">
+                Search on Google to find out you might have cancer.
+              </li></a
+            >
+            <a id="answer5-2" href=""
+              ><li class="answer">
+                Locate a potential criminal who has stolen a purse from an old
+                lady.
+              </li></a
+            >
+            <a id="answer5-3" href=""
+              ><li class="answer">
+                Join the evil side, run away and never look back.
+              </li></a
+            >
+          </ul>
+        </section>
+      </article>
+    </main>
 
-        </article>
-
-        </main>
-        
-        <footer>
-            <p>This site is part of a project for Kea, Copenhagen School of Design and Technology.</p>
-            <p>The data refering beer classification and characteristics has been extracted from the 2015 Beer Style Guidelines of the BJCP.  </p></footer>
+    <footer>
+      <p>
+        This site is part of a project for Kea, Copenhagen School of Design and
+        Technology.
+      </p>
+      <p>
+        The data refering beer classification and characteristics has been
+        extracted from the 2015 Beer Style Guidelines of the BJCP.
+      </p>
+    </footer>
 
     <script src="js/quiz-js.js"></script>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

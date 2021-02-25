@@ -1,0 +1,138 @@
+.beer-types-page {
+  margin: 10vh 10rem 10vh 10rem;
+}
+
+.beer-types-page h1,
+#subcat {
+  margin-top: 5vh;
+}
+
+.beer-types-page #intro {
+  margin: 2vh 5vw 5vh 0;
+}
+
+.beer-types-page #intro,
+.beer-types-page h1 {
+  margin-left: 3vw;
+}
+
+.beer-types-page #intro-subcat {
+  margin: 5vh 5vw 5vh 0;
+}
+
+.beer-types-page #intro-subcat,
+#subcat {
+  margin-left: 3vw;
+}
+
+.beer-types-page .beers-grid-cat {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+.beer-types-page .beers-grid-cat section {
+  background-color: var(--color-5);
+  padding: 1rem 1rem 1rem 1rem;
+  border-radius: 40px;
+  margin: 0 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.beer-types-page .beers-grid-cat section h3 {
+  text-align: center;
+}
+
+.beer-types-page .beers-grid-cat section img {
+  max-width: 100%;
+  max-height: 15rem;
+}
+
+.beer-types-page article a:link {
+  text-decoration: none;
+  color: black;
+}
+.beer-types-page article a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.beer-types-page article section:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s;
+  box-shadow: 3px 37px 37px -9px rgba(26, 29, 42, 0.36);
+  cursor: pointer;
+}
+
+.beer-types-page #button-category {
+  display: flex;
+  flex-direction: column;
+}
+.beer-types-page #button-category h3 {
+  text-align: center;
+}
+.beer-types-page #button-category button {
+  background-color: black;
+  box-shadow: 3px 37px 37px -9px rgba(26, 29, 42, 0.36);
+  font-size: 1.2rem;
+}
+
+.beer-types-page #button-category a {
+  align-self: center;
+}
+
+.button-white {
+  background-color: rgba(26, 29, 42);
+  color: white;
+}
+
+@media screen and (max-width: 950px) {
+  main.beer-types-page h1 {
+    font-size: 300%;
+  }
+}
+@media screen and (max-width: 750px) {
+  main.beer-types-page {
+    margin: 10vh 5rem 10vh 5rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  main.beer-types-page h1 {
+    font-size: 250%;
+  }
+  main.beer-types-page {
+    margin: 7vh 3rem 7vh 3rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  main.beer-types-page h1 {
+    font-size: 200%;
+  }
+  main.beer-types-page {
+    margin: 5vh 1rem 5vh 1rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  main.beer-types-page h1 {
+    font-size: 150%;
+    margin-bottom: -3vh;
+  }
+  main.beer-types-page#intro {
+    margin-bottom: 2vh;
+  }
+  main.beer-types-pages {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 2rem;
+    margin-bottom: 5rem;
+  }
+  article.beers-grid-cat {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 2rem;
+    margin-bottom: 5rem;
+  }
+}
