@@ -213,7 +213,7 @@ nav ul li {
 }
 
 #logo {
-width: 12.5%;
+width: 11.5%;
 position:absolute;
 left:0%; 
 top: 0;
@@ -355,7 +355,50 @@ top: 0;
 
 .question a:hover {
   text-decoration: none;
-  color: black;
+  color: black;}
+  
+footer {
+  background-color: var(--bg-color);
+  color: var(--main-text-color);
+  font-family: var(--secondary-font);
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+#allbeers-cta {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  font-size: 1.2rem;
+  background-color: #1B1D29;
+}
+#home-curiosities article {
+  background-color: var(--link-color);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin: 0rem;
+  margin-bottom: 3rem;
+  padding: 2rem;
+}
+#home-curiosities article img {
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+}
+#home-curiosities article p {
+  font-size: 1.6rem;
+}
+#home-curiosities {
+  margin-bottom: 3rem;
+  display: grid;
+}
+#quiz-front {
+  padding: 2rem;
+}
+#intro p {
+  font-size: 1.2rem;
 }
 
 .question a:active {
@@ -784,9 +827,10 @@ span {
   text-align: center;
 }
 #beer-types-page #button-category button {
-  background-color: black;
+  background-color: #ED7874; 
   box-shadow: 3px 37px 37px -9px rgba(26, 29, 42, 0.36);
-}
+  font-size: 1.2rem;
+  }
 
 #beer-types-page #button-category a {
   align-self: center;
@@ -804,67 +848,67 @@ span {
     /* **** logo adjustments ****  */
 @media screen and (max-width: 1338px) {
   #logo{
-    width: 13%;
+    width: 12.5%;
   }
 }
 @media screen and (max-width: 1202px) {
   #logo{
-    width: 14%;
+    width: 13%;
   }
 }
 @media screen and (max-width: 1064px) {
   #logo{
-    width: 14.5%;
+    width: 14%;
   }
 }
 @media screen and (max-width: 958px) {
   #logo{
-    width: 15.5%;
+    width: 15%;
   }
 }
 @media screen and (max-width: 850px) {
   #logo{
-    width: 17%;
+    width: 16%;
   }
 }
 @media screen and (max-width: 800px) {
   #logo{
-    width: 20%;
+    width: 18%;
   }
 } 
 @media screen and (max-width: 770px) {
   #logo{
-    width: 21%;
+    width: 20%;
   }
 } 
 @media screen and (max-width: 680px) {
   #logo{
-    width: 22.5%;
+    width: 21%;
   }
 } 
 @media screen and (max-width: 645px) {
   #logo{
-    width: 23%;
+    width: 22%;
   }
 } 
 @media screen and (max-width: 610px) {
   #logo{
-    width: 24%;
+    width: 23%;
   }
 } 
 @media screen and (max-width: 570px) {
   #logo{
-    width: 25%;
+    width: 24%;
   }
 } 
 @media screen and (max-width: 540px) {
   #logo{
-    width: 27%;
+    width: 25%;
   }
 } 
 @media screen and (max-width: 500px) {
   #logo{
-    width: 28%;
+    width: 26.5%;
   }
 } 
 @media screen and (max-width: 470px) {
@@ -874,12 +918,17 @@ span {
 } 
 @media screen and (max-width: 420px) {
   #logo{
-    width: 31.5%;
+    width: 30%;
   }
 } 
 @media screen and (max-width: 390px) {
   #logo{
     width: 33%;
+  }
+} 
+@media screen and (max-width: 350px) {
+  #logo{
+    width: 36%;
   }
 } 
 /* **** logo adjustments ****  */
